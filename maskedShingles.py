@@ -10,7 +10,7 @@ def masked(url_hash_list):
     v_list, mv_list = delete_under_threshold(v_list, mv_list)
     return v_list, mv_list
 
-def delete_under_threshold(v_list, mv_list, soglia=50):
+def delete_under_threshold(v_list, mv_list, soglia=20):
     new_v_list = []
     new_mv_list = []
     for v in v_list:
