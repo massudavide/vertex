@@ -7,18 +7,27 @@ import numpy as np
 
 
 def creazione_matrice_caratteristica(rootdir):
-    df_shingles = creazione_matrice_caratteristica_aux(rootdir)
+    # df_shingles = creazione_matrice_caratteristica_aux(rootdir)
     # df_shingles = df_shingles.reset_index()
     # del[df_shingles['index']]
-    return df_shingles
+    url_shingles = creazione_matrice_caratteristica_aux(rootdir)
+    return url_shingles
 
 def creazione_matrice_caratteristica_aux(rootdir):
-    shingles_df = pd.DataFrame([], [])
     pagine_list = lista_pagine_web(rootdir)
-    for i in pagine_list:
-        shingles_df = concat_df(i, shingles_df)
-    shingles_df = shingles_df.fillna(0)
-    return shingles_df
+    url_shigle_list = []
+    for url in pagine_list:
+        shingle_list = shingle_set(url)
+        url_shigle_list.append([url, shingle_list])
+    return url_shigle_list
+
+# def creazione_matrice_caratteristica_aux(rootdir):
+#     shingles_df = pd.DataFrame([], [])
+#     pagine_list = lista_pagine_web(rootdir)
+#     for i in pagine_list:
+#         shingles_df = concat_df(i, shingles_df)
+#     shingles_df = shingles_df.fillna(0)
+#     return shingles_df
 
 def concat_df(pagina_web, df):
     shingle_list = shingle_set(pagina_web)

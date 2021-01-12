@@ -1,14 +1,24 @@
 from datasketch import MinHash
 
-def minhash_implem(df):
-    list_urs_hash = []
-    for col in df.columns:
+def minhash_implem(url_shingles_list):
+    list_url_hash = []
+    for url in range(len(url_shingles_list)):
         m = MinHash(num_perm=8)
-        for r, row in df.iterrows():
-            if df[col][r] == 1:
-                m.update(r.encode('utf8'))
-        list_urs_hash.append(["{0}".format(col), m.digest()])
-    return list_urs_hash
+        shingle_list = url_shingles_list[url][1]
+        for shingle in shingle_list:
+            m.update(shingle.encode('utf8'))
+        list_url_hash.append(["{0}".format(url_shingles_list[url]), m.digest()])
+    return list_url_hash
+
+# def minhash_implem(df):
+#     list_urs_hash = []
+#     for col in df.columns:
+#         m = MinHash(num_perm=8)
+#         for r, row in df.iterrows():
+#             if df[col][r] == 1:
+#                 m.update(r.encode('utf8'))
+#         list_urs_hash.append(["{0}".format(col), m.digest()])
+#     return list_urs_hash
 
 # def prova_minhash():
 #     data1 = ['minhash', 'is', 'a', 'probabilistic', 'data', 'structure', 'for',
