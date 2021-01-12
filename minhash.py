@@ -7,7 +7,7 @@ def minhash_implem(url_shingles_list):
         shingle_list = url_shingles_list[url][1]
         for shingle in shingle_list:
             m.update(shingle.encode('utf8'))
-        list_url_hash.append(["{0}".format(url_shingles_list[url]), m.digest()])
+        list_url_hash.append(["{0}".format(url_shingles_list[url][0]), m.digest()])
     return list_url_hash
 
 # def minhash_implem(df):

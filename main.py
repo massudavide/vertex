@@ -31,7 +31,7 @@ def main():
 
     # df1 = signatureCreator.a(df)
     t3 = time.clock() -t2
-    print("signatureCreator.a ---- Time elapsed: ", t3)
+    print("minhash.minhash_implem ---- Time elapsed: ", t3)
     t3 = time.clock()
     # df1.to_csv('prova.csv', index=False)
 
@@ -49,9 +49,10 @@ def main():
     t1 = time.clock() - t0
     print("Time elapsed: ", t1)
 
-    # for i in range(len(mv_list)):
-    #     if mv_list[i][3] > 0:
-    #         print(mv_list[i][0], '\n', mv_list[i][1], '\n', mv_list[i][3], '\n', mv_list[i][2] ,'\n\n')
+    for i in range(len(mv_list)):
+        if mv_list[i][3] > 0:
+            print(mv_list[i][0], '\n', mv_list[i][1], '\n', mv_list[i][3], '\n', mv_list[i][2] ,'\n\n')
+            # print(mv_list[i][0], '\n', mv_list[i][1], '\n', mv_list[i][3], '\n\n')
 
 
 
