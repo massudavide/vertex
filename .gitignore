@@ -55,3 +55,4 @@ cython_debug/
 #file da ignorare
 /webPages/
 /webPages/*
+/webPages/**
