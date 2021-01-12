@@ -50,3 +50,7 @@ dmypy.json
 
 # Cython debug symbols
 cython_debug/
+
+
+#file da ignorare
+/webPages/

@@ -6,15 +6,15 @@ import pandas as pd
 import numpy as np
 
 
-def creazione_matrice_caratteristica():
-    df_shingles = creazione_matrice_caratteristica_aux()
-    df_shingles = df_shingles.reset_index()
-    df_shingles.to_csv('dfShingles.csv', index=False)
-    print(df_shingles)
+def creazione_matrice_caratteristica(rootdir):
+    df_shingles = creazione_matrice_caratteristica_aux(rootdir)
+    # df_shingles = df_shingles.reset_index()
+    # del[df_shingles['index']]
+    return df_shingles
 
-def creazione_matrice_caratteristica_aux():
+def creazione_matrice_caratteristica_aux(rootdir):
     shingles_df = pd.DataFrame([], [])
-    pagine_list = lista_pagine_web()
+    pagine_list = lista_pagine_web(rootdir)
     for i in pagine_list:
         shingles_df = concat_df(i, shingles_df)
     shingles_df = shingles_df.fillna(0)
@@ -29,31 +29,13 @@ def concat_df(pagina_web, df):
     return df
 
 
-def lista_pagine_web():
+def lista_pagine_web(rootdir):
     lista_pagine = []
-    rootdir = 'webPages/www.themoviedb.org'
     for file in glob.glob(f'{rootdir}/**/*.html', recursive=True):
         lista_pagine.append(file)
     # print(lista_pagine)
     return lista_pagine
 
-# def lista_pagine_web():
-#     lista_pagine = []
-#     rootdir = 'webPages/www.themoviedb.org'
-#     for file in glob.glob(f'webPages/www.themoviedb.org\\assets\\2\\favicon-32x32-543a21832c8931d3494a68881f6afcafc58e96c5d324345377f3197a37b367b5.html'):
-#         lista_pagine.append(file)
-#     # print(lista_pagine)
-#     return lista_pagine
-
-
-# funzione deprecata perchè non scende nei sotto alberi (sotto cartelle)
-# def lista_pagine_web():
-#     lista_pagine = []
-#     os.chdir("webPages/www.themoviedb.org")
-#     for file in glob.glob("*/*.html"):
-#         lista_pagine.append(file)
-#     print(lista_pagine)
-#     return lista_pagine
 
 def shingle_set(pagina_web):
     tag_list = regex(pagina_web)
