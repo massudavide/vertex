@@ -16,7 +16,7 @@ def main():
 
     # lf.lista_pagine_web()
 
-    rootdir = 'webPages/2'
+    rootdir = 'webPages/a'
     # df = shinglesCreator.creazione_matrice_caratteristica(rootdir)
     url_shingles = shinglesCreator.creazione_matrice_caratteristica(rootdir)
     t2 = time.clock() - t0
@@ -52,7 +52,6 @@ def main():
     for i in range(len(mv_list)):
         if mv_list[i][3] > 0:
             print(mv_list[i][0], '\n', mv_list[i][1], '\n', mv_list[i][3], '\n', mv_list[i][2] ,'\n\n')
-            # print(mv_list[i][0], '\n', mv_list[i][1], '\n', mv_list[i][3], '\n\n')
 
 
 
