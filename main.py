@@ -13,11 +13,28 @@ import re
 
 
 def main():
+
+    rootdir = 'webPages/theMovieDB.org'
+    # lf.lista_pagine_web(rootdir)
+    mv_list = clusterizz_pagine(rootdir)
+    valutazione(mv_list)
+
+def valutazione(mv_list):
+    for i in range(len(mv_list)):
+        print('-----', mv_list[i][0], '-----', '\n')
+        if mv_list[i][3] > 0:
+            dict_value_cluster = {}
+            for j in range(len(mv_list[i][2])):
+                word = mv_list[i][2][j].split("\\")
+                if word[1] in dict_value_cluster:
+                    dict_value_cluster[word[1]] += 1
+                else:
+                    dict_value_cluster[word[1]] = 1
+            print(dict_value_cluster)
+
+
+def clusterizz_pagine(rootdir):
     t0 = time.clock()
-
-    # lf.lista_pagine_web()
-
-    rootdir = 'webPages/a'
     # df = shinglesCreator.creazione_matrice_caratteristica(rootdir)
     url_shingles = shinglesCreator.creazione_matrice_caratteristica(rootdir)
     t2 = time.clock() - t0
@@ -51,16 +68,10 @@ def main():
     t1 = time.clock() - t0
     print("Time elapsed: ", t1)
 
-    for i in range(len(mv_list)):
-        if mv_list[i][3] > 0:
-            print(mv_list[i][0], '\n', mv_list[i][1], '\n', mv_list[i][3], '\n', mv_list[i][2] ,'\n\n')
-
-
-
-
-
-
-
+    # for i in range(len(mv_list)):
+    #     if mv_list[i][3] > 0:
+    #         print(mv_list[i][0], '\n', mv_list[i][1], '\n', mv_list[i][3], '\n', mv_list[i][2] ,'\n\n')
+    return mv_list
 
 if __name__ == "__main__":
     main()
