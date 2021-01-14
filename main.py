@@ -17,7 +17,7 @@ def main():
 
     # lf.lista_pagine_web()
 
-    rootdir = 'webPages/2'
+    rootdir = 'webPages/a'
     # df = shinglesCreator.creazione_matrice_caratteristica(rootdir)
     url_shingles = shinglesCreator.creazione_matrice_caratteristica(rootdir)
     t2 = time.clock() - t0
