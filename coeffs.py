@@ -6,6 +6,8 @@ def get_coeffs(h,length):
     a_list = []
     b_list = []
     c = next_prime(length)
+    # a_list = (random.sample(range(1, 256), h))
+    # b_list = (random.sample(range(1, 256), h))
     a_list = (random.sample(range(1, c-1), h))
     b_list = (random.sample(range(1, c-1), h))
     coeffs = []

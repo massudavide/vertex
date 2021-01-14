@@ -8,6 +8,7 @@ import numpy as np
 import pandas as pd
 import time
 import minhash
+import re
 
 
 
@@ -27,7 +28,8 @@ def main():
 
     # df = pd.read_csv('dfShingles_person.csv')
     # print(df.shape)
-    lista_vectors = minhash.minhash_implem(url_shingles)
+    # lista_vectors = minhash.minhash_implem(url_shingles)
+    lista_vectors = minhash.minhash_implem2(url_shingles, 8)
 
     # df1 = signatureCreator.a(df)
     t3 = time.clock() -t2
@@ -52,7 +54,6 @@ def main():
     for i in range(len(mv_list)):
         if mv_list[i][3] > 0:
             print(mv_list[i][0], '\n', mv_list[i][1], '\n', mv_list[i][3], '\n', mv_list[i][2] ,'\n\n')
-            # print(mv_list[i][0], '\n', mv_list[i][1], '\n', mv_list[i][3], '\n\n')
 
 
 

@@ -2,6 +2,8 @@ import numpy as np
 import pandas as pd
 import coeffs
 
+
+
 def a(df, num_hash=8):
 
     lista_coeff = coeffs.get_coeffs(num_hash, len(df.index))
