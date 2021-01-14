@@ -22,7 +22,7 @@ def main():
 def valutazione(mv_list):
     for i in range(len(mv_list)):
         if mv_list[i][3] > 0:
-            print('-----', mv_list[i][0], '-----', '\n')
+            print('-----', mv_list[i][0], '-----')
             dict_value_cluster = {}
             for j in range(len(mv_list[i][2])):
                 word = mv_list[i][2][j].split("\\")
