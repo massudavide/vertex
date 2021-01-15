@@ -8,21 +8,24 @@ import numpy as np
 import pandas as pd
 import time
 import minhash
+import fileSaver
 import re
 
 
 
 def main():
 
-    rootdir = 'webPages/theMovieDB.org'
+    rootdir = 'webPages/2'
     # lf.lista_pagine_web(rootdir)
     mv_list = clusterizz_pagine(rootdir)
-    valutazione(mv_list)
+    mv_list = valutazione(mv_list)
+    fileSaver.save_to_file(mv_list, 'valutazione-minhash2-3.txt')
 
 def valutazione(mv_list):
+    list_cluster = []
     for i in range(len(mv_list)):
         if mv_list[i][3] > 0:
-            print('-----', mv_list[i][0], '-----')
+            print('-----', mv_list[i][0], mv_list[i][3], '-----')
             dict_value_cluster = {}
             for j in range(len(mv_list[i][2])):
                 word = mv_list[i][2][j].split("\\")
@@ -31,6 +34,8 @@ def valutazione(mv_list):
                 else:
                     dict_value_cluster[word[1]] = 1
             print(dict_value_cluster)
+            list_cluster.append([mv_list[i][0], [dict_value_cluster]])
+    return list_cluster
 
 
 def clusterizz_pagine(rootdir):
@@ -41,10 +46,6 @@ def clusterizz_pagine(rootdir):
     print("creazione_matrice_caratteristica ---- Time elapsed: ", t2)
     t2 = time.clock()
 
-    # df_shingles.to_csv('dfShingles_person.csv', index=False)
-
-    # df = pd.read_csv('dfShingles_person.csv')
-    # print(df.shape)
     # lista_vectors = minhash.minhash_implem(url_shingles)
     lista_vectors = minhash.minhash_implem2(url_shingles, 8)
 
@@ -52,9 +53,7 @@ def clusterizz_pagine(rootdir):
     t3 = time.clock() -t2
     print("minhash.minhash_implem ---- Time elapsed: ", t3)
     t3 = time.clock()
-    # df1.to_csv('prova.csv', index=False)
 
-    # df1 = pd.read_csv('prova.csv')
     v_list, mv_list = maskedShingles.masked(lista_vectors)
     t4 = time.clock() - t3
     print("maskedShingles.masked ---- Time elapsed: ", t4)

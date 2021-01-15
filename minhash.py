@@ -41,13 +41,13 @@ def all_shingle_list(url_shingle_list):
 def dict_shingle_vector(lista_shingle, num_hash):
     lista_coeff = coeffs.get_coeffs(num_hash, len(lista_shingle))
     shingle_vector_dict = {}
+    c = lista_coeff[2]
     for i in range(len(lista_shingle)):
         hash_vector = []
-        shingle = int(hashlib.sha1(lista_shingle[i].encode("utf-8")).hexdigest(), 16) % (10 ** 8)
+        shingle = (int(hashlib.sha1(lista_shingle[i].encode("utf-8")).hexdigest(), 16) % (10 ** 8))
         for count in range(num_hash):
             a = lista_coeff[0][count]
             b = lista_coeff[1][count]
-            c = lista_coeff[2]
             hash = ((a * shingle) + b) % c
             # hash = ((a * i) + b) % c
             hash_vector.append(hash)
