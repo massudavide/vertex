@@ -15,11 +15,11 @@ import re
 
 def main():
 
-    rootdir = 'webPages/2'
+    rootdir = 'dataset/study'
     # lf.lista_pagine_web(rootdir)
     mv_list = clusterizz_pagine(rootdir)
     mv_list = valutazione(mv_list)
-    fileSaver.save_to_file(mv_list, 'valutazione-minhash2-3.txt')
+    fileSaver.save_to_file(mv_list, 'valutazione-minhash.txt')
 
 def valutazione(mv_list):
     list_cluster = []
@@ -46,8 +46,8 @@ def clusterizz_pagine(rootdir):
     print("creazione_matrice_caratteristica ---- Time elapsed: ", t2)
     t2 = time.clock()
 
-    # lista_vectors = minhash.minhash_implem(url_shingles)
-    lista_vectors = minhash.minhash_implem2(url_shingles, 8)
+    lista_vectors = minhash.minhash_implem(url_shingles)
+    # lista_vectors = minhash.minhash_implem2(url_shingles, 8)
 
     # df1 = signatureCreator.a(df)
     t3 = time.clock() -t2

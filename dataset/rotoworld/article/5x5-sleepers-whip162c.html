@@ -1,0 +1,3523 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" prefix="og: https://ogp.me/ns#">
+  
+<!-- Mirrored from www.rotoworld.com/article/draft-strategy/5x5-sleepers-whip?amp by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 16 Jan 2021 08:38:19 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta charset="utf-8" /><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"97ac2b2f11",applicationID:"115229629"};window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var i=t[n]={exports:{}};e[n][0].call(i.exports,function(t){var i=e[n][1][t];return r(i||t)},i,i.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<n.length;i++)r(n[i]);return r}({1:[function(e,t,n){function r(){}function i(e,t,n){return function(){return o(e,[u.now()].concat(c(arguments)),t?null:this,n),t?void 0:this}}var o=e("handle"),a=e(6),c=e(7),f=e("ee").get("tracer"),u=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var d=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],p="api-",l=p+"ixn-";a(d,function(e,t){s[t]=i(p+t,!0,"api")}),s.addPageAction=i(p+"addPageAction",!0),s.setCurrentRouteName=i(p+"routeName",!0),t.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,t){var n={},r=this,i="function"==typeof t;return o(l+"tracer",[u.now(),e,n],r),function(){if(f.emit((i?"":"no-")+"fn-start",[u.now(),r,i],n),i)try{return t.apply(this,arguments)}catch(e){throw f.emit("fn-err",[arguments,this,e],n),e}finally{f.emit("fn-end",[u.now()],n)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){m[t]=i(l+t)}),newrelic.noticeError=function(e,t){"string"==typeof e&&(e=new Error(e)),o("err",[e,u.now(),!1,t])}},{}],2:[function(e,t,n){function r(){return c.exists&&performance.now?Math.round(performance.now()):(o=Math.max((new Date).getTime(),o))-a}function i(){return o}var o=(new Date).getTime(),a=o,c=e(8);t.exports=r,t.exports.offset=a,t.exports.getLastTimestamp=i},{}],3:[function(e,t,n){function r(e,t){var n=e.getEntries();n.forEach(function(e){"first-paint"===e.name?d("timing",["fp",Math.floor(e.startTime)]):"first-contentful-paint"===e.name&&d("timing",["fcp",Math.floor(e.startTime)])})}function i(e,t){var n=e.getEntries();n.length>0&&d("lcp",[n[n.length-1]])}function o(e){e.getEntries().forEach(function(e){e.hadRecentInput||d("cls",[e])})}function a(e){if(e instanceof m&&!g){var t=Math.round(e.timeStamp),n={type:e.type};t<=p.now()?n.fid=p.now()-t:t>p.offset&&t<=Date.now()?(t-=p.offset,n.fid=p.now()-t):t=p.now(),g=!0,d("timing",["fi",t,n])}}function c(e){d("pageHide",[p.now(),e])}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var f,u,s,d=e("handle"),p=e("loader"),l=e(5),m=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){f=new PerformanceObserver(r);try{f.observe({entryTypes:["paint"]})}catch(v){}u=new PerformanceObserver(i);try{u.observe({entryTypes:["largest-contentful-paint"]})}catch(v){}s=new PerformanceObserver(o);try{s.observe({type:"layout-shift",buffered:!0})}catch(v){}}if("addEventListener"in document){var g=!1,w=["click","keydown","mousedown","pointerdown","touchstart"];w.forEach(function(e){document.addEventListener(e,a,!1)})}l(c)}},{}],4:[function(e,t,n){function r(e,t){if(!i)return!1;if(e!==i)return!1;if(!t)return!0;if(!o)return!1;for(var n=o.split("."),r=t.split("."),a=0;a<r.length;a++)if(r[a]!==n[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var c=navigator.userAgent,f=c.match(a);f&&c.indexOf("Chrome")===-1&&c.indexOf("Chromium")===-1&&(i="Safari",o=f[1])}t.exports={agent:i,version:o,match:r}},{}],5:[function(e,t,n){function r(e){function t(){e(a&&document[a]?document[a]:document[i]?"hidden":"visible")}"addEventListener"in document&&o&&document.addEventListener(o,t,!1)}t.exports=r;var i,o,a;"undefined"!=typeof document.hidden?(i="hidden",o="visibilitychange",a="visibilityState"):"undefined"!=typeof document.msHidden?(i="msHidden",o="msvisibilitychange"):"undefined"!=typeof document.webkitHidden&&(i="webkitHidden",o="webkitvisibilitychange",a="webkitVisibilityState")},{}],6:[function(e,t,n){function r(e,t){var n=[],r="",o=0;for(r in e)i.call(e,r)&&(n[o]=t(r,e[r]),o+=1);return n}var i=Object.prototype.hasOwnProperty;t.exports=r},{}],7:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,i=n-t||0,o=Array(i<0?0:i);++r<i;)o[r]=e[t+r];return o}t.exports=r},{}],8:[function(e,t,n){t.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,t,n){function r(){}function i(e){function t(e){return e&&e instanceof r?e:e?u(e,f,a):a()}function n(n,r,i,o,a){if(a!==!1&&(a=!0),!l.aborted||o){e&&a&&e(n,r,i);for(var c=t(i),f=v(n),u=f.length,s=0;s<u;s++)f[s].apply(c,r);var p=d[h[n]];return p&&p.push([b,n,r,c]),c}}function o(e,t){y[e]=v(e).concat(t)}function m(e,t){var n=y[e];if(n)for(var r=0;r<n.length;r++)n[r]===t&&n.splice(r,1)}function v(e){return y[e]||[]}function g(e){return p[e]=p[e]||i(n)}function w(e,t){s(e,function(e,n){t=t||"feature",h[n]=t,t in d||(d[t]=[])})}var y={},h={},b={on:o,addEventListener:o,removeEventListener:m,emit:n,get:g,listeners:v,context:t,buffer:w,abort:c,aborted:!1};return b}function o(e){return u(e,f,a)}function a(){return new r}function c(){(d.api||d.feature)&&(l.aborted=!0,d=l.backlog={})}var f="nr@context",u=e("gos"),s=e(6),d={},p={},l=t.exports=i();t.exports.getOrSetContext=o,l.backlog=d},{}],gos:[function(e,t,n){function r(e,t,n){if(i.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return e[t]=r,r}var i=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){i.buffer([e],r),i.emit(e,t,n)}var i=e("ee").get("handle");t.exports=r,r.ee=i},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,o,function(){return i++})}var i=1,o="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!x++){var e=b.info=NREUM.info,t=p.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return u.abort();f(y,function(t,n){e[t]||(e[t]=n)});var n=a();c("mark",["onload",n+b.offset],null,"api"),c("timing",["load",n]);var r=p.createElement("script");r.src="https://"+e.agent,t.parentNode.insertBefore(r,t)}}function i(){"complete"===p.readyState&&o()}function o(){c("mark",["domContent",a()+b.offset],null,"api")}var a=e(2),c=e("handle"),f=e(6),u=e("ee"),s=e(4),d=window,p=d.document,l="addEventListener",m="attachEvent",v=d.XMLHttpRequest,g=v&&v.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:v,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var w=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1194.min.js"},h=v&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),b=t.exports={offset:a.getLastTimestamp(),now:a,origin:w,features:{},xhrWrappable:h,userAgent:s};e(1),e(3),p[l]?(p[l]("DOMContentLoaded",o,!1),d[l]("load",r,!1)):(p[m]("onreadystatechange",i),d[m]("onload",r)),c("mark",["firstbyte",a.getLastTimestamp()],null,"api");var x=0},{}],"wrap-function":[function(e,t,n){function r(e,t){function n(t,n,r,f,u){function nrWrapper(){var o,a,s,p;try{a=this,o=d(arguments),s="function"==typeof r?r(o,a):r||{}}catch(l){i([l,"",[o,a,f],s],e)}c(n+"start",[o,a,f],s,u);try{return p=t.apply(a,o)}catch(m){throw c(n+"err",[o,a,m],s,u),m}finally{c(n+"end",[o,a,p],s,u)}}return a(t)?t:(n||(n=""),nrWrapper[p]=t,o(t,nrWrapper,e),nrWrapper)}function r(e,t,r,i,o){r||(r="");var c,f,u,s="-"===r.charAt(0);for(u=0;u<t.length;u++)f=t[u],c=e[f],a(c)||(e[f]=n(c,s?f+r:r,i,f,o))}function c(n,r,o,a){if(!m||t){var c=m;m=!0;try{e.emit(n,r,o,t,a)}catch(f){i([f,n,r,o],e)}m=c}}return e||(e=s),n.inPlace=r,n.flag=p,n}function i(e,t){t||(t=s);try{t.emit("internal-error",e)}catch(n){}}function o(e,t,n){if(Object.defineProperty&&Object.keys)try{var r=Object.keys(e);return r.forEach(function(n){Object.defineProperty(t,n,{get:function(){return e[n]},set:function(t){return e[n]=t,t}})}),t}catch(o){i([o],n)}for(var a in e)l.call(e,a)&&(t[a]=e[a]);return t}function a(e){return!(e&&e instanceof Function&&e.apply&&!e[p])}function c(e,t){var n=t(e);return n[p]=e,o(e,n,s),n}function f(e,t,n){var r=e[t];e[t]=c(r,n)}function u(){for(var e=arguments.length,t=new Array(e),n=0;n<e;++n)t[n]=arguments[n];return t}var s=e("ee"),d=e(7),p="nr@original",l=Object.prototype.hasOwnProperty,m=!1;t.exports=r,t.exports.wrapFunction=c,t.exports.wrapInPlace=f,t.exports.argsToArray=u},{}]},{},["loader"]);</script>
+<noscript><style>form.antibot * :not(.antibot-message) { display: none !important; }</style>
+</noscript><meta name="twitter:card" content="summary" />
+<meta property="og:site_name" content="Rotoworld.com" />
+<link rel="canonical" href="5x5-sleepers-whip.html" />
+<meta property="og:type" content="website" />
+<meta property="fb:app_id" content="288657877905041" />
+<meta name="twitter:description" content="Seth Trachtman looks at WHIP sleepers for 2021, including Cleveland starting pitcher Aaron Civale." />
+<meta name="twitter:site" content="@rotoworld" />
+<meta name="twitter:title" content="5x5 Sleepers: WHIP - Fantasy Columns" />
+<meta name="description" content="Seth Trachtman looks at WHIP sleepers for 2021, including Cleveland starting pitcher Aaron Civale." />
+<meta name="google-site-verification" content="c4eKikU6u91QPxf8X4IP2B0zStRMje7vCUUIdtQe13I" />
+<link rel="image_src" href="../../sites/default/files/2021-01/Civale_USA.jpg" />
+<meta property="og:title" content="Draft Strategy: 5x5 Sleepers: WHIP - Fantasy Columns" />
+<meta property="og:description" content="Seth Trachtman looks at WHIP sleepers for 2021, including Cleveland starting pitcher Aaron Civale." />
+<meta name="twitter:image" content="https://www.rotoworld.com/sites/default/files/2021-01/Civale_USA.jpg" />
+<meta property="og:image" content="https://www.rotoworld.com/sites/default/files/2021-01/Civale_USA.jpg" />
+<meta property="og:image:url" content="https://www.rotoworld.com/sites/default/files/2021-01/Civale_USA.jpg" />
+<script id="mps-page-integration">var mpscall = {
+  "site":"rotoworld-web",
+  "cat":"article|draft-strategy|5x5-sleepers-whip",
+  "type":"article"
+}
+var mpsopts = {
+ "host":"mps.nbcuni.com",
+ "updatecorrelator":1
+}
+var mpssponsor = "";
+var mps=mps||{};mps._ext=mps._ext||{};mps._adsheld=[];mps._queue=mps._queue||{};mps._queue.mpsloaded=mps._queue.mpsloaded||[];mps._queue.mpsinit=mps._queue.mpsinit||[];mps._queue.gptloaded=mps._queue.gptloaded||[];mps._queue.adload=mps._queue.adload||[];mps._queue.adclone=mps._queue.adclone||[];mps._queue.adview=mps._queue.adview||[];mps._queue.refreshads=mps._queue.refreshads||[];mps.__timer=Date.now||function(){return+new Date};mps.__intcode="v2";if(typeof mps.getAd!="function")mps.getAd=function(adunit){if(typeof adunit!="string")return false;var slotid="mps-getad-"+adunit.replace(/\W/g,"");if(!mps._ext||!mps._ext.loaded){mps._queue.gptloaded.push(function(){typeof mps._gptfirst=="function"&&mps._gptfirst(adunit,slotid);mps.insertAd("#"+slotid,adunit)});mps._adsheld.push(adunit)}return'<div id="'+slotid+'" class="mps-wrapper" data-mps-fill-slot="'+adunit+'"></div>'};(function(){head=document.head||document.getElementsByTagName("head")[0],mpsload=document.createElement("script");mpsload.src="//"+mpsopts.host+"/fetch/ext/load-"+mpscall.site+".js?nowrite=2";mpsload.id="mps-load";head.insertBefore(mpsload,head.firstChild)})();
+if (mpssponsor) {
+  mps._queue.gptloaded.push(function() {
+    mps.roto.setChroming(mpssponsor);
+  });
+}
+
+//--MPS Ready (auto-loader and mps request executed) [auto-clearing]
+mps._queue.mpsready = mps._queue.mpsready || [];
+mps._queue.mpsready.push(function() {
+  // Listen on 'dynamicPageUpdate' event and update all ads on the page.
+  jQuery(window).on('dynamicPageUpdate', function () {
+    mps.refreshAds();
+  });
+
+  mps._queue.refreshads = mps._queue.refreshads || [];
+  // MPS callback that is executed each time when Ads Refreshed.
+  mps._queue.refreshads.push(function(slotvars) {
+    // Trigger generic ads update event.
+    jQuery(window).trigger('adsRefreshed');
+  });
+});
+</script>
+<meta name="Generator" content="Drupal 8 (https://www.drupal.org)" />
+<meta name="MobileOptimized" content="width" />
+<meta name="HandheldFriendly" content="true" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<script type="application/ld+json">{
+    "@context": "http://schema.org",
+    "@graph": [
+        {
+            "@type": "NewsArticle",
+            "headline": "5x5 Sleepers: WHIP",
+            "thumbnailUrl": "https://www.rotoworld.com/sites/default/files/styles/media_thumbnail/public/2021-01/Civale_USA.jpg?itok=dh06-GGz",
+            "url": "https://www.rotoworld.com/article/draft-strategy/5x5-sleepers-whip",
+            "description": "Seth Trachtman looks at WHIP sleepers for 2021, including Cleveland starting pitcher Aaron Civale.",
+            "image": {
+                "@type": "ImageObject",
+                "url": "https://www.rotoworld.com/sites/default/files/2021-01/Civale_USA.jpg",
+                "width": "2016",
+                "height": "1132"
+            },
+            "datePublished": "Wed, 12/30/2020 - 12:56",
+            "dateModified": "Mon, 01/11/2021 - 00:30",
+            "author": {
+                "@type": "Person",
+                "@id": "386",
+                "name": "Seth Trachtman",
+                "url": "https://www.rotoworld.com/node/386"
+            },
+            "publisher": {
+                "@type": "Organization",
+                "name": "Rotoworld.com",
+                "url": "https://www.rotoworld.com/",
+                "logo": {
+                    "@type": "ImageObject",
+                    "url": "https://www.rotoworld.com/themes/custom/rotoworld_theme/images/logos/logo-black.png",
+                    "width": "100",
+                    "height": "100"
+                }
+            },
+            "mainEntityOfPage": {
+                "@type": "WebPage",
+                "@id": "https://www.rotoworld.com/article/draft-strategy/5x5-sleepers-whip"
+            }
+        }
+    ]
+}</script>
+<link rel="icon" type="image/png" sizes="16x16" href="../../themes/custom/rotoworld_theme/images/favicon-16x16.png" />
+<link rel="icon" type="image/png" sizes="32x32" href="../../themes/custom/rotoworld_theme/images/favicon-32x32.png" />
+<link rel="icon" type="image/png" sizes="96x96" href="../../themes/custom/rotoworld_theme/images/favicon-96x96.png" />
+<link rel="apple-touch-icon" sizes="192x192" href="../../themes/custom/rotoworld_theme/images/apple-touch-icon-192x192.html" />
+<link rel="apple-touch-icon-precomposed" href="../../themes/custom/rotoworld_theme/images/apple-touch-icon-precomposed.html" />
+<link rel="apple-touch-icon" sizes="152x152" href="../../themes/custom/rotoworld_theme/images/apple-touch-icon-152x152.html" />
+<link rel="apple-touch-icon" sizes="180x180" href="../../themes/custom/rotoworld_theme/images/apple-touch-icon-180x180.html" />
+<link rel="shortcut icon" href="../../themes/custom/rotoworld_theme/favicon.ico" type="image/vnd.microsoft.icon" />
+<link rel="revision" href="5x5-sleepers-whip.html" />
+<link rel="amphtml" href="5x5-sleepers-whip162c.html?amp" />
+<script>window.a2a_config=window.a2a_config||{};a2a_config.callbacks=[];a2a_config.overlays=[];a2a_config.templates={};</script>
+
+    <title>5x5 Sleepers: WHIP - Fantasy Columns</title>
+    <link rel="stylesheet" media="all" href="../../sites/default/files/css/css_0GoHCde3eW2KUz6m2unYpAU7T4mizvPYzGMnBoPjuXM.css" />
+<link rel="stylesheet" media="all" href="../../sites/default/files/css/css_Wehcv57Fn7LbA7NcGWRmS16XE9SP25bMvxfqz9XGOm0.css" />
+<link rel="stylesheet" media="all" href="../../../cdn.jsdelivr.net/gh/kenwheeler/slick%401.8.1/slick/slick.css" />
+<link rel="stylesheet" media="all" href="../../sites/default/files/css/css_DkDJiw9Qu5nF09ao9VZfg_zdE92rB4zLCc9HqoynIfM.css" />
+<link rel="stylesheet" media="print" href="../../sites/default/files/css/css_JYfT5J0ISU0kZtIy-zoR1RP00gUTS3nAykdOuTJd4TY.css" />
+<link rel="stylesheet" media="all" href="../../sites/default/files/css/css_HsBUpE3PLw6nctg_dhbcKR-SHJ-ddqZPrwb0-34f9iw.css" />
+
+    
+<!--[if lte IE 8]>
+<script src="/core/assets/vendor/html5shiv/html5shiv.min.js?v=3.7.3"></script>
+<![endif]-->
+
+  </head>
+          
+      <body class="page-article-draft-strategy-5x5-sleepers-whip section-article page--entity-type--node role--anonymous with-subnav sidebar-first one-sidebar">
+    <div id="skip">
+      <a href="#main-menu" class="visually-hidden focusable skip-link">
+        Skip to main navigation
+      </a>
+    </div>
+    
+      <div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas>
+            <div id="campaign">
+        <div>
+    
+
+<div id="block-mps-ad-top-banner" class="block block-rw-mps block-mps-ad-top-banner">
+  
+    
+      <div class="block__content">
+      <div class="mps-ad mps-ad-topbanner">
+  <script>(function(a,d){if(!a||!window.mps||!mps._queue)return 0;mps._queue.gptloaded.push(function(){mps.insertAd(a,d)})})(document.scripts[document.scripts.length-1].parentNode,'topbanner');</script>
+</div>
+
+    </div>
+  </div>
+
+
+<div class="scoreboard-placeholder block block-rw-league block-rwscoreboard" id="block-rwscoreboard">
+  
+    
+      <div class="block__content">
+      <div>Loading scores...</div>
+
+    </div>
+  </div>
+
+
+<div id="block-customfixvideosembeds" class="block--html block--block_content--html block block-block-content block-customfixvideosembeds">
+  
+    
+      <div class="block__content">
+      
+            <div class="html__block-html-body"><style>
+.article__article-body .video-embed-field-responsive-video iframe {
+    width: 854px;
+    height: 480px;
+}
+</style></div>
+      
+    </div>
+  </div>
+
+  </div>
+
+    </div>
+    
+    <header id="header">
+          <div id="header-top-region">
+        <div class="container header-top-container">
+            <nav role="navigation" aria-labelledby="block-premiumnavigation-menu" id="block-premiumnavigation" class="block block-menu navigation menu--premium">
+            
+  <h2 class="visually-hidden" id="block-premiumnavigation-menu">Premium navigation</h2>
+  
+
+        <div class="inner">
+  <a href="http://products.rotoworld.com/pricing?utm_int=Edge1082">
+    <div class="premium-logo header__logo"></div>
+  </a>
+
+  
+                                      <ul block="premiumnavigation" class="menu premium">
+          <div id="premium-sub-nav-app" class="premium-sub-menu"></div>
+          <div class="premium-subnavigation__waiting"></div>
+
+                                  <li class="menu-item menu-item--expanded premium-li draft-guide">
+                            
+              <a href="#premium-menu-draft-guide">                Draft Guide
+              </a>
+                          </li>
+                                  <li class="menu-item menu-item--expanded premium-li season-tools">
+                            
+              <a href="#premium-menu-season-pass">                Season Tools
+              </a>
+                          </li>
+                                  <li class="menu-item menu-item--expanded premium-li dfs-tools">
+                            
+              <a href="#premium-menu-dfs-toolkit">                DFS Tools
+              </a>
+                          </li>
+                                  <li class="menu-item menu-item--expanded premium-li betting-tools">
+                            
+              <a href="#premium-menu-betting-tools">                Betting Tools
+              </a>
+                          </li>
+                  </ul>
+            
+
+  
+</div>
+
+  </nav>
+
+
+<div id="block-rwusermenu" class="block block-rw block-rwusermenu">
+  
+    
+      <div class="block__content">
+      <div id="rw-user-menu"></div>
+
+    </div>
+  </div>
+
+
+<div id="block-customfixextralabelsforarticles" class="block--html block--block_content--html block block-block-content block-customfixextralabelsforarticles">
+  
+    
+      <div class="block__content">
+      
+            <div class="html__block-html-body"><style>
+.contextual-region.column .column__sport-landing-page,
+.contextual-region.column .column__bet-pages,
+.article-full__type .column .column__sport-landing-page,
+.article-full__type .column .column__bet-pages {
+  display: none;
+} 
+</style></div>
+      
+    </div>
+  </div>
+
+
+<div id="block-digiohlightboxcustom" class="block--html block--block_content--html block block-block-content block-digiohlightboxcustom">
+  
+    
+      <div class="block__content">
+      
+            <div class="html__block-html-body"><style></style>
+<!--START Lightbox Javascript-->
+<script type='text/javascript' src='../../../www.lightboxcdn.com/vendor/968d2110-0fa4-4520-808b-b5283365482f/lightbox_inline.js'></script>
+<!--END Lightbox Javascript--></div>
+      
+    </div>
+  </div>
+
+
+<div id="block-facebookpixel" class="block--html block--block_content--html block block-block-content block-facebookpixel">
+  
+    
+      <div class="block__content">
+      
+            <div class="html__block-html-body"><!-- Facebook Pixel Code --><script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  '../../../connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '674090812743125');
+  fbq('track', 'PageView');
+</script><p><noscript><br />
+  <img height="1" width="1" style="display:none"<br />
+       src="https://www.facebook.com/tr?id=674090812743125&amp;ev=PageView&amp;noscript=1"/><br />
+</noscript></p>
+<!-- End Facebook Pixel Code --></div>
+      
+    </div>
+  </div>
+
+
+<div id="block-googleglobalsitetag" class="block--html block--block_content--html block block-block-content block-googleglobalsitetag">
+  
+    
+      <div class="block__content">
+      
+            <div class="html__block-html-body"><!-- Global site tag (gtag.js) - Google Ads: 621187035 --><script async src="https://www.googletagmanager.com/gtag/js?id=AW-621187035"></script><script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-621187035');
+</script></div>
+      
+    </div>
+  </div>
+
+
+<div id="block-hidebreakingnewsoverride" class="block--html block--block_content--html block block-block-content block-hidebreakingnewsoverride">
+  
+    
+      <div class="block__content">
+      
+            <div class="html__block-html-body"><script>
+function browserInfo () {
+  var ua = navigator.userAgent, tem,
+    M = ua.match(/(opera|chrome|safari|firefox|msie|trident(?=\/))\/?\s*(\d+)/i) || [];
+  if (/trident/i.test(M[1])) {
+    tem = /\brv[ :]+(\d+)/g.exec(ua) || [];
+    return ['IE ', (tem[1] || '')];
+  }
+  if (M[1] === 'Chrome') {
+    tem = ua.match(/\b(OPR|Edge)\/(\d+)/);
+    if (tem != null) return tem.slice(1).replace('OPR', 'Opera');
+  }
+  M = M[2] ? [M[1], M[2]] : [navigator.appName, navigator.appVersion, '-?'];
+  if ((tem = ua.match(/version\/(\d+)/i)) != null) M.splice(1, 1, tem[1]);
+  return M;
+}
+function shouldFixChrome() {
+ var info = browserInfo();
+console.log(info);
+ // Only do for chrome greater than 77 and less than 78.
+ if (info[0] == 'Chrome' && info[1] && info[1] == 77) return true;
+return false; 
+}
+if (shouldFixChrome()) {
+  window.setTimeout(function () {
+   document.querySelector('#main > div').style.display = "none"
+  //document.querySelector('.notification.active, .slick-slide .notification').style.display = 'block';
+  }, 500);
+}
+</script></div>
+      
+    </div>
+  </div>
+
+
+<div id="block-playernewsedgepromooverridejm" class="block--html block--block_content--html block block-block-content block-playernewsedgepromooverridejm">
+  
+    
+      <div class="block__content">
+      
+            <div class="html__block-html-body"><p><style type="text/css">.promo_edge {
+color:#fff !important;
+background:#ce1141;
+padding:15px;
+border-radius:4px;
+text-decoration:none;
+width:100%;
+opacity:.9;
+display:inline-block;
+}
+
+a:hover.promo_edge  {
+color:#fff;
+opacity:1;
+background:#ce1141;
+}
+
+.promo_edge:after {
+color:#fff;
+opacity:.9;
+background:#ce1141;
+
+}
+</style></p>
+</div>
+      
+    </div>
+  </div>
+
+
+        </div>
+      </div>
+              <div id="header-region">
+        <div class="container">
+          <div id="nav-mobile-hamburger" class="nav__hamburger"></div>
+                      <div class="nav__logo">
+              <a href="../../index.html" title="Home" rel="home">
+                <img src="../../themes/custom/rotoworld_theme/logo.svg" alt="Home"/>
+              </a>
+            </div>
+                      <nav role="navigation" aria-labelledby="block-mainnavigation-menu" id="block-mainnavigation" class="block block-menu navigation menu--main">
+            
+  <h2 class="visually-hidden" id="block-mainnavigation-menu">Main navigation</h2>
+  
+
+        
+                  <ul block="mainnavigation" class="menu main">
+                    <li class="menu-item menu-item--expanded">
+                  <a href="../../sports/nfl/football.html" data-drupal-link-system-path="node/134316">NFL</a>
+        
+                                    <ul class="menu menu-level--1">
+                    <li class="menu-item">
+                  <a href="../../sports/nfl/football.html" data-drupal-link-system-path="node/134316">NFL Home</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../football/nfl/player-news.html" data-drupal-link-system-path="football/nfl/player-news">Player News</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../football/nfl/player-news/headlines.html" data-drupal-link-system-path="football/nfl/player-news/headlines">Headlines</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="https://bet.rotoworld.com/nfl/live_odds">Live Odds</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="https://bet.rotoworld.com/nfl/futures">Futures</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../features/nfl.html" data-drupal-link-system-path="features/nfl">Columns</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../videos/football/nfl.html" data-drupal-link-system-path="videos/football/nfl">Videos</a>
+        
+              </li>
+                <li class="menu-item menu-item--expanded">
+                  <a href="../../football/nfl/teams.html" data-drupal-link-system-path="football/nfl/teams">Teams</a>
+        
+                                    <ul class="menu menu-level--2">
+                    <li class="menu-item">
+                  <a href="../../football/nfl/teams/arz/arizona-cardinals.html" data-drupal-link-system-path="team/116">Arizona Cardinals</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../football/nfl/teams/atl/atlanta-falcons.html" data-drupal-link-system-path="team/11">Atlanta Falcons</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../football/nfl/teams/bal/baltimore-ravens.html" data-drupal-link-system-path="team/161">Baltimore Ravens</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../football/nfl/teams/buf/buffalo-bills.html" data-drupal-link-system-path="team/16">Buffalo Bills</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../football/nfl/teams/car/carolina-panthers.html" data-drupal-link-system-path="team/151">Carolina Panthers</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../football/nfl/teams/chi/chicago-bears.html" data-drupal-link-system-path="team/21">Chicago Bears</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../football/nfl/teams/cin/cincinnati-bengals.html" data-drupal-link-system-path="team/26">Cincinnati Bengals</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../football/nfl/teams/cle/cleveland-browns.html" data-drupal-link-system-path="team/31">Cleveland Browns</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../football/nfl/teams/dal/dallas-cowboys.html" data-drupal-link-system-path="team/36">Dallas Cowboys</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../football/nfl/teams/den/denver-broncos.html" data-drupal-link-system-path="team/41">Denver Broncos</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../football/nfl/teams/det/detroit-lions.html" data-drupal-link-system-path="team/46">Detroit Lions</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../football/nfl/teams/gb/green-bay-packers.html" data-drupal-link-system-path="team/51">Green Bay Packers</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../football/nfl/teams/hou/houston-texans.html" data-drupal-link-system-path="team/166">Houston Texans</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../football/nfl/teams/ind/indianapolis-colts.html" data-drupal-link-system-path="team/61">Indianapolis Colts</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../football/nfl/teams/jac/jacksonville-jaguars.html" data-drupal-link-system-path="team/156">Jacksonville Jaguars</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../football/nfl/teams/kc/kansas-city-chiefs.html" data-drupal-link-system-path="team/66">Kansas City Chiefs</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../football/nfl/teams/lv/las-vegas-raiders.html">Las Vegas Raiders</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../football/nfl/teams/lac/los-angeles-chargers.html" data-drupal-link-system-path="team/126">Los Angeles Chargers</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../football/nfl/teams/lar/los-angeles-rams.html" data-drupal-link-system-path="team/76">Los Angeles Rams</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../football/nfl/teams/mia/miami-dolphins.html" data-drupal-link-system-path="team/81">Miami Dolphins</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../football/nfl/teams/min/minnesota-vikings.html" data-drupal-link-system-path="team/86">Minnesota Vikings</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../football/nfl/teams/ne/new-england-patriots.html" data-drupal-link-system-path="team/91">New England Patriots</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../football/nfl/teams/no/new-orleans-saints.html" data-drupal-link-system-path="team/96">New Orleans Saints</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../football/nfl/teams/nyg/new-york-giants.html" data-drupal-link-system-path="team/101">New York Giants</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../football/nfl/teams/nyj/new-york-jets.html" data-drupal-link-system-path="team/106">New York Jets</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../football/nfl/teams/phi/philadelphia-eagles.html" data-drupal-link-system-path="team/111">Philadelphia Eagles</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../football/nfl/teams/pit/pittsburgh-steelers.html" data-drupal-link-system-path="team/121">Pittsburgh Steelers</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../football/nfl/teams/sf/san-francisco-49ers.html" data-drupal-link-system-path="team/131">San Francisco 49ers</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../football/nfl/teams/sea/seattle-seahawks.html" data-drupal-link-system-path="team/136">Seattle Seahawks</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../football/nfl/teams/tb/tampa-bay-buccaneers.html" data-drupal-link-system-path="team/141">Tampa Bay Buccaneers</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../football/nfl/teams/ten/tennessee-titans.html" data-drupal-link-system-path="team/56">Tennessee Titans</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../football/nfl/teams/was/washington-football-team.html">Washington Football Team</a>
+        
+              </li>
+        </ul>
+  
+              </li>
+                <li class="menu-item">
+                  <a href="../../football/nfl/injury-report.html" data-drupal-link-system-path="football/nfl/injury-report">Injury Report</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../football/nfl/depth-charts.html" data-drupal-link-system-path="football/nfl/depth-charts">Depth Charts</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../football/nfl/standings.html" title="NFL Standings" data-drupal-link-system-path="football/nfl/standings">Standings</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../football/nfl/player-news/transactions.html" data-drupal-link-system-path="football/nfl/player-news/transactions">Transactions</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../podcasts/nfl.html" title="Rotoworld Football Podcast" data-drupal-link-system-path="podcasts/nfl">Podcast</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../football/nfl/teams/arz/arizona-cardinals/contracts.html" data-drupal-link-system-path="football/nfl/teams/arz/arizona-cardinals/contracts">Contracts</a>
+        
+              </li>
+        </ul>
+  
+              </li>
+                <li class="menu-item menu-item--expanded">
+                  <a href="../../sports/nba/basketball.html" data-drupal-link-system-path="node/134326">NBA</a>
+        
+                                    <ul class="menu menu-level--1">
+                    <li class="menu-item">
+                  <a href="../../sports/nba/basketball.html" data-drupal-link-system-path="node/134326">NBA Home</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="https://products.rotoworld.com/nba/draft-guide" title="Season Pass">Draft Guide</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../nba/mock-draft-simulator.html">Mock Draft Simulator</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../basketball/nba/player-news.html" data-drupal-link-system-path="basketball/nba/player-news">Player News</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../basketball/nba/player-news/headlines.html" data-drupal-link-system-path="basketball/nba/player-news/headlines">Headlines</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="https://bet.rotoworld.com/nba/live_odds">Live Odds</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="https://bet.rotoworld.com/nba/futures">Futures</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../features/nba.html" data-drupal-link-system-path="features/nba">Columns</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../videos/basketball/nba.html" data-drupal-link-system-path="videos/basketball/nba">Videos</a>
+        
+              </li>
+                <li class="menu-item menu-item--expanded">
+                  <a href="../../basketball/nba/teams.html" data-drupal-link-system-path="basketball/nba/teams">Teams</a>
+        
+                                    <ul class="menu menu-level--2">
+                    <li class="menu-item">
+                  <a href="../../basketball/nba/teams/atl/atlanta-hawks.html" data-drupal-link-system-path="team/176">Atlanta Hawks</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../basketball/nba/teams/bos/boston-celtics.html" data-drupal-link-system-path="team/181">Boston Celtics</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../basketball/nba/teams/bkn/brooklyn-nets.html" data-drupal-link-system-path="team/256">Brooklyn Nets</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../basketball/nba/teams/cha/charlotte-hornets.html" data-drupal-link-system-path="team/321">Charlotte Hornets</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../basketball/nba/teams/chi/chicago-bulls.html" data-drupal-link-system-path="team/191">Chicago Bulls</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../basketball/nba/teams/cle/cleveland-cavaliers.html" data-drupal-link-system-path="team/196">Cleveland Cavaliers</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../basketball/nba/teams/dal/dallas-mavericks.html" data-drupal-link-system-path="team/201">Dallas Mavericks</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../basketball/nba/teams/den/denver-nuggets.html" data-drupal-link-system-path="team/206">Denver Nuggets</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../basketball/nba/teams/det/detroit-pistons.html" data-drupal-link-system-path="team/211">Detroit Pistons</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../basketball/nba/teams/gs/golden-state-warriors.html" data-drupal-link-system-path="team/216">Golden State Warriors</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../basketball/nba/teams/hou/houston-rockets.html" data-drupal-link-system-path="team/221">Houston Rockets</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../basketball/nba/teams/ind/indiana-pacers.html" data-drupal-link-system-path="team/226">Indiana Pacers</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../basketball/nba/teams/lac/los-angeles-clippers.html" data-drupal-link-system-path="team/231">Los Angeles Clippers</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../basketball/nba/teams/lak/los-angeles-lakers.html" data-drupal-link-system-path="team/236">Los Angeles Lakers</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../basketball/nba/teams/mem/memphis-grizzlies.html" data-drupal-link-system-path="team/316">Memphis Grizzlies</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../basketball/nba/teams/mia/miami-heat.html" data-drupal-link-system-path="team/241">Miami Heat</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../basketball/nba/teams/mlw/milwaukee-bucks.html" data-drupal-link-system-path="team/246">Milwaukee Bucks</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../basketball/nba/teams/min/minnesota-timberwolves.html" data-drupal-link-system-path="team/251">Minnesota Timberwolves</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../basketball/nba/teams/no/new-orleans-pelicans.html" data-drupal-link-system-path="team/186">New Orleans Pelicans</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../basketball/nba/teams/ny/new-york-knicks.html" data-drupal-link-system-path="team/261">New York Knicks</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../basketball/nba/teams/okc/oklahoma-city-thunder.html" data-drupal-link-system-path="team/296">Oklahoma City Thunder</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../basketball/nba/teams/orl/orlando-magic.html" data-drupal-link-system-path="team/266">Orlando Magic</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../basketball/nba/teams/phi/philadelphia-76ers.html" data-drupal-link-system-path="team/271">Philadelphia 76ers</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../basketball/nba/teams/pho/phoenix-suns.html" data-drupal-link-system-path="team/276">Phoenix Suns</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../basketball/nba/teams/por/portland-trail-blazers.html" data-drupal-link-system-path="team/281">Portland Trail Blazers</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../basketball/nba/teams/sac/sacramento-kings.html" data-drupal-link-system-path="team/286">Sacramento Kings</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../basketball/nba/teams/sa/san-antonio-spurs.html" data-drupal-link-system-path="team/291">San Antonio Spurs</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../basketball/nba/teams/tor/toronto-raptors.html" data-drupal-link-system-path="team/311">Toronto Raptors</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../basketball/nba/teams/uta/utah-jazz.html" data-drupal-link-system-path="team/301">Utah Jazz</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../basketball/nba/teams/was/washington-wizards.html" data-drupal-link-system-path="team/306">Washington Wizards</a>
+        
+              </li>
+        </ul>
+  
+              </li>
+                <li class="menu-item">
+                  <a href="../../basketball/nba/injury-report.html" data-drupal-link-system-path="basketball/nba/injury-report">Injury Report</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../basketball/nba/depth-charts.html" data-drupal-link-system-path="basketball/nba/depth-charts">Depth Charts</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../basketball/nba/standings.html" title="NBA Standings" data-drupal-link-system-path="basketball/nba/standings">Standings</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../basketball/nba/player-news/transactions.html" data-drupal-link-system-path="basketball/nba/player-news/transactions">Transactions</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../podcasts/nba.html" title="Rotoworld Fantasy Basketball Podcast" data-drupal-link-system-path="podcasts/nba">Podcast</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../basketball/nba/teams/atl/atlanta-hawks/contracts.html" data-drupal-link-system-path="basketball/nba/teams/atl/atlanta-hawks/contracts">Contracts</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../daily/nba.html" data-drupal-link-system-path="node/134376">DFS</a>
+        
+              </li>
+        </ul>
+  
+              </li>
+                <li class="menu-item menu-item--expanded">
+                  <a href="../../sports/mlb/baseball.html" data-drupal-link-system-path="node/134321">MLB</a>
+        
+                                    <ul class="menu menu-level--1">
+                    <li class="menu-item">
+                  <a href="../../sports/mlb/baseball.html" data-drupal-link-system-path="node/134321">MLB Home</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../baseball/mlb/player-news.html" data-drupal-link-system-path="baseball/mlb/player-news">Player News</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../baseball/mlb/player-news/headlines.html" data-drupal-link-system-path="baseball/mlb/player-news/headlines">Headlines</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="https://bet.rotoworld.com/mlb/live_odds">Live Odds</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="https://bet.rotoworld.com/mlb/futures">Futures</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../features/mlb.html" data-drupal-link-system-path="features/mlb">Columns</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../videos/baseball/mlb.html" data-drupal-link-system-path="videos/baseball/mlb">Videos</a>
+        
+              </li>
+                <li class="menu-item menu-item--expanded">
+                  <a href="../../baseball/mlb/teams.html" data-drupal-link-system-path="baseball/mlb/teams">Teams</a>
+        
+                                    <ul class="menu menu-level--2">
+                    <li class="menu-item">
+                  <a href="../../baseball/mlb/teams/arz/arizona-diamondbacks.html" data-drupal-link-system-path="team/641">Arizona Diamondbacks</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../baseball/mlb/teams/atl/atlanta-braves.html" data-drupal-link-system-path="team/571">Atlanta Braves</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../baseball/mlb/teams/bal/baltimore-orioles.html" data-drupal-link-system-path="team/501">Baltimore Orioles</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../baseball/mlb/teams/bos/boston-red-sox.html" data-drupal-link-system-path="team/506">Boston Red Sox</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../baseball/mlb/teams/chc/chicago-cubs.html" data-drupal-link-system-path="team/576">Chicago Cubs</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../baseball/mlb/teams/cws/chicago-white-sox.html" data-drupal-link-system-path="team/516">Chicago White Sox</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../baseball/mlb/teams/cin/cincinnati-reds.html" data-drupal-link-system-path="team/581">Cincinnati Reds</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../baseball/mlb/teams/cle/cleveland-indians.html" data-drupal-link-system-path="team/521">Cleveland Indians</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../baseball/mlb/teams/col/colorado-rockies.html" data-drupal-link-system-path="team/631">Colorado Rockies</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../baseball/mlb/teams/det/detroit-tigers.html" data-drupal-link-system-path="team/526">Detroit Tigers</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../baseball/mlb/teams/hou/houston-astros.html" data-drupal-link-system-path="team/586">Houston Astros</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../baseball/mlb/teams/kc/kansas-city-royals.html" data-drupal-link-system-path="team/531">Kansas City Royals</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../baseball/mlb/teams/laa/los-angeles-angels.html" data-drupal-link-system-path="team/511">Los Angeles Angels</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../baseball/mlb/teams/la/los-angeles-dodgers.html" data-drupal-link-system-path="team/591">Los Angeles Dodgers</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../baseball/mlb/teams/mia/miami-marlins.html" data-drupal-link-system-path="team/636">Miami Marlins</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../baseball/mlb/teams/mlw/milwaukee-brewers.html" data-drupal-link-system-path="team/536">Milwaukee Brewers</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../baseball/mlb/teams/min/minnesota-twins.html" data-drupal-link-system-path="team/541">Minnesota Twins</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../baseball/mlb/teams/nym/new-york-mets.html" data-drupal-link-system-path="team/601">New York Mets</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../baseball/mlb/teams/nyy/new-york-yankees.html" data-drupal-link-system-path="team/546">New York Yankees</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../baseball/mlb/teams/oak/oakland-athletics.html" data-drupal-link-system-path="team/551">Oakland Athletics</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../baseball/mlb/teams/phi/philadelphia-phillies.html" data-drupal-link-system-path="team/606">Philadelphia Phillies</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../baseball/mlb/teams/pit/pittsburgh-pirates.html" data-drupal-link-system-path="team/611">Pittsburgh Pirates</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../baseball/mlb/teams/sd/san-diego-padres.html" data-drupal-link-system-path="team/621">San Diego Padres</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../baseball/mlb/teams/sf/san-francisco-giants.html" data-drupal-link-system-path="team/626">San Francisco Giants</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../baseball/mlb/teams/sea/seattle-mariners.html" data-drupal-link-system-path="team/556">Seattle Mariners</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../baseball/mlb/teams/stl/st-louis-cardinals.html" data-drupal-link-system-path="team/616">St. Louis Cardinals</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../baseball/mlb/teams/tb/tampa-bay-rays.html" data-drupal-link-system-path="team/646">Tampa Bay Rays</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../baseball/mlb/teams/tex/texas-rangers.html" data-drupal-link-system-path="team/561">Texas Rangers</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../baseball/mlb/teams/tor/toronto-blue-jays.html" data-drupal-link-system-path="team/566">Toronto Blue Jays</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../baseball/mlb/teams/was/washington-nationals.html" data-drupal-link-system-path="team/596">Washington Nationals</a>
+        
+              </li>
+        </ul>
+  
+              </li>
+                <li class="menu-item">
+                  <a href="../../baseball/mlb/injury-report.html" data-drupal-link-system-path="baseball/mlb/injury-report">Injury Report</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../baseball/mlb/depth-charts.html" data-drupal-link-system-path="baseball/mlb/depth-charts">Depth Charts</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../baseball/mlb/standings.html" title="MLB Standings" data-drupal-link-system-path="baseball/mlb/standings">Standings</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../baseball/mlb/daily-lineups.html" title="MLB Daily Lineups" data-drupal-link-system-path="baseball/mlb/daily-lineups">Daily Lineups</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../baseball/mlb/player-news/transactions.html" data-drupal-link-system-path="baseball/mlb/player-news/transactions">Transactions</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../podcasts/mlb.html" title="Rotoworld Baseball Podcast" data-drupal-link-system-path="podcasts/mlb">Podcast</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../baseball/mlb/teams/arz/arizona-diamondbacks/contracts.html" data-drupal-link-system-path="baseball/mlb/teams/arz/arizona-diamondbacks/contracts">Contracts</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../daily/mlb.html" data-drupal-link-system-path="node/134361">DFS</a>
+        
+              </li>
+        </ul>
+  
+              </li>
+                <li class="menu-item menu-item--expanded">
+                  <a href="../../sports/nhl/hockey.html" data-drupal-link-system-path="node/134331">NHL</a>
+        
+                                    <ul class="menu menu-level--1">
+                    <li class="menu-item">
+                  <a href="../../sports/nhl/hockey.html" data-drupal-link-system-path="node/134331">NHL Home</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="https://products.rotoworld.com/nhl/season-pass" title="NHL Season Pass">Season Pass</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../hockey/nhl/player-news.html" data-drupal-link-system-path="hockey/nhl/player-news">Player News</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../hockey/nhl/player-news/headlines.html" data-drupal-link-system-path="hockey/nhl/player-news/headlines">Headlines</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="https://bet.rotoworld.com/nhl/live_odds">Live Odds</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="https://bet.rotoworld.com/nhl/futures">Futures</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../nhl/mock-draft-simulator.html" data-drupal-link-system-path="node/211796">Mock Draft Simulator</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../features/nhl.html" data-drupal-link-system-path="features/nhl">Columns</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../videos/hockey/nhl.html" data-drupal-link-system-path="videos/hockey/nhl">Videos</a>
+        
+              </li>
+                <li class="menu-item menu-item--expanded">
+                  <a href="../../hockey/nhl/teams.html" data-drupal-link-system-path="hockey/nhl/teams">Teams</a>
+        
+                                    <ul class="menu menu-level--2">
+                    <li class="menu-item">
+                  <a href="../../hockey/nhl/teams/ana/anaheim-ducks.html" data-drupal-link-system-path="team/451">Anaheim Ducks</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../hockey/nhl/teams/ari/arizona-coyotes.html" data-drupal-link-system-path="team/446">Arizona Coyotes</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../hockey/nhl/teams/bos/boston-bruins.html" data-drupal-link-system-path="team/331">Boston Bruins</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../hockey/nhl/teams/buf/buffalo-sabres.html" data-drupal-link-system-path="team/336">Buffalo Sabres</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../hockey/nhl/teams/cal/calgary-flames.html" data-drupal-link-system-path="team/341">Calgary Flames</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../hockey/nhl/teams/car/carolina-hurricanes.html" data-drupal-link-system-path="team/361">Carolina Hurricanes</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../hockey/nhl/teams/chi/chicago-blackhawks.html" data-drupal-link-system-path="team/346">Chicago Blackhawks</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../hockey/nhl/teams/col/colorado-avalanche.html" data-drupal-link-system-path="team/411">Colorado Avalanche</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../hockey/nhl/teams/clm/columbus-blue-jackets.html" data-drupal-link-system-path="team/471">Columbus Blue Jackets</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../hockey/nhl/teams/dal/dallas-stars.html" data-drupal-link-system-path="team/371">Dallas Stars</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../hockey/nhl/teams/det/detroit-red-wings.html" data-drupal-link-system-path="team/351">Detroit Red Wings</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../hockey/nhl/teams/edm/edmonton-oilers.html" data-drupal-link-system-path="team/356">Edmonton Oilers</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../hockey/nhl/teams/fla/florida-panthers.html" data-drupal-link-system-path="team/456">Florida Panthers</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../hockey/nhl/teams/la/los-angeles-kings.html" data-drupal-link-system-path="team/366">Los Angeles Kings</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../hockey/nhl/teams/min/minnesota-wild.html" data-drupal-link-system-path="team/476">Minnesota Wild</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../hockey/nhl/teams/mon/montreal-canadiens.html" data-drupal-link-system-path="team/376">Montreal Canadiens</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../hockey/nhl/teams/nas/nashville-predators.html" data-drupal-link-system-path="team/461">Nashville Predators</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../hockey/nhl/teams/nj/new-jersey-devils.html" data-drupal-link-system-path="team/381">New Jersey Devils</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../hockey/nhl/teams/nyi/new-york-islanders.html" data-drupal-link-system-path="team/386">New York Islanders</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../hockey/nhl/teams/nyr/new-york-rangers.html" data-drupal-link-system-path="team/391">New York Rangers</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../hockey/nhl/teams/ott/ottawa-senators.html" data-drupal-link-system-path="team/396">Ottawa Senators</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../hockey/nhl/teams/phi/philadelphia-flyers.html" data-drupal-link-system-path="team/401">Philadelphia Flyers</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../hockey/nhl/teams/pit/pittsburgh-penguins.html" data-drupal-link-system-path="team/406">Pittsburgh Penguins</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../hockey/nhl/teams/sj/san-jose-sharks.html" data-drupal-link-system-path="team/416">San Jose Sharks</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../hockey/nhl/teams/stl/st-louis-blues.html" data-drupal-link-system-path="team/421">St. Louis Blues</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../hockey/nhl/teams/tb/tampa-bay-lightning.html" data-drupal-link-system-path="team/426">Tampa Bay Lightning</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../hockey/nhl/teams/tor/toronto-maple-leafs.html" data-drupal-link-system-path="team/431">Toronto Maple Leafs</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../hockey/nhl/teams/van/vancouver-canucks.html" data-drupal-link-system-path="team/436">Vancouver Canucks</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../hockey/nhl/teams/vgk/vegas-golden-knights.html" data-drupal-link-system-path="team/481">Vegas Golden Knights</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../hockey/nhl/teams/was/washington-capitals.html" data-drupal-link-system-path="team/441">Washington Capitals</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../hockey/nhl/teams/wpg/winnipeg-jets.html" data-drupal-link-system-path="team/466">Winnipeg Jets</a>
+        
+              </li>
+        </ul>
+  
+              </li>
+                <li class="menu-item">
+                  <a href="../../hockey/nhl/injury-report.html" data-drupal-link-system-path="hockey/nhl/injury-report">Injury Report</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../hockey/nhl/depth-charts.html" data-drupal-link-system-path="hockey/nhl/depth-charts">Depth Charts</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../hockey/nhl/standings.html" title="NHL Standings" data-drupal-link-system-path="hockey/nhl/standings">Standings</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../hockey/nhl/player-news/transactions.html" data-drupal-link-system-path="hockey/nhl/player-news/transactions">Transactions</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../hockey/nhl/teams/ana/anaheim-ducks/contracts.html" data-drupal-link-system-path="hockey/nhl/teams/ana/anaheim-ducks/contracts">Contracts</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../daily/nhl.html" data-drupal-link-system-path="node/134366">DFS</a>
+        
+              </li>
+        </ul>
+  
+              </li>
+                <li class="menu-item menu-item--expanded">
+                  <a href="../../sports/cfb/college-football.html" data-drupal-link-system-path="node/134351">CFB</a>
+        
+                                    <ul class="menu menu-level--1">
+                    <li class="menu-item">
+                  <a href="../../sports/cfb/college-football.html" data-drupal-link-system-path="node/134351">CFB Home</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../college-football/cfb/player-news.html" data-drupal-link-system-path="college-football/cfb/player-news">Player News</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../college-football/cfb/player-news/headlines.html" data-drupal-link-system-path="college-football/cfb/player-news/headlines">Headlines</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="https://bet.rotoworld.com/cfb/live_odds">Live Odds</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="https://bet.rotoworld.com/cfb/futures">Futures</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../features/cfb.html" data-drupal-link-system-path="features/cfb">Columns</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../videos/college-football/cfb.html" data-drupal-link-system-path="videos/college-football/cfb">Videos</a>
+        
+              </li>
+        </ul>
+  
+              </li>
+                <li class="menu-item menu-item--expanded">
+                  <a href="../../index.html" class="js-menu-item-more main__more-menu-item" data-drupal-link-system-path="&lt;front&gt;">More</a>
+        
+                                    <ul class="menu menu-level--1">
+                    <li class="menu-item menu-item--expanded">
+                  <a href="../../sports/golf/golf.html" data-drupal-link-system-path="node/134381">Golf</a>
+        
+                                    <ul class="menu menu-level--2">
+                    <li class="menu-item">
+                  <a href="../../sports/golf/golf.html" data-drupal-link-system-path="node/134381">Golf Home</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../golf/golf/player-news.html" data-drupal-link-system-path="golf/golf/player-news">Player News</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../golf/golf/player-news/headlines.html" data-drupal-link-system-path="golf/golf/player-news/headlines">Headlines</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="https://bet.rotoworld.com/pga/tournaments">Live Leaderboard</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="https://bet.rotoworld.com/pga/futures">Futures</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../features/golf.html" data-drupal-link-system-path="features/golf">Columns</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../videos/golf/golf.html" data-drupal-link-system-path="videos/golf/golf">Videos</a>
+        
+              </li>
+                <li class="menu-item menu-item--collapsed">
+                  <a href="../../golf/golf/injury-report.html" data-drupal-link-system-path="golf/golf/injury-report">Injury Report</a>
+        
+              </li>
+        </ul>
+  
+              </li>
+                <li class="menu-item menu-item--expanded">
+                  <a href="../../sports/pl/soccer.html" data-drupal-link-system-path="node/134346">Premier League</a>
+        
+                                    <ul class="menu menu-level--2">
+                    <li class="menu-item">
+                  <a href="../../sports/pl/soccer.html" data-drupal-link-system-path="node/134346">PL Home</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../soccer/pl/player-news.html" data-drupal-link-system-path="soccer/pl/player-news">Player News</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../soccer/pl/player-news/headlines.html" data-drupal-link-system-path="soccer/pl/player-news/headlines">Headlines</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="https://bet.rotoworld.com/pl/futures">Futures</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../videos/soccer/pl.html" data-drupal-link-system-path="videos/soccer/pl">Videos</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../soccer/pl/teams.html" data-drupal-link-system-path="soccer/pl/teams">Teams</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../soccer/pl/depth-charts.html" data-drupal-link-system-path="soccer/pl/depth-charts">Depth Charts</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../soccer/pl/injury-report.html" data-drupal-link-system-path="soccer/pl/injury-report">Injury Report</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../soccer/pl/player-news/transactions.html" data-drupal-link-system-path="soccer/pl/player-news/transactions">Transactions</a>
+        
+              </li>
+        </ul>
+  
+              </li>
+                <li class="menu-item menu-item--expanded">
+                  <a href="../../sports/nas/auto-racing.html" data-drupal-link-system-path="node/134386">NASCAR</a>
+        
+                                    <ul class="menu menu-level--2">
+                    <li class="menu-item">
+                  <a href="../../sports/nas/auto-racing.html" data-drupal-link-system-path="node/134386">NASCAR Home</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../auto-racing/nas/player-news.html" data-drupal-link-system-path="auto-racing/nas/player-news">Player News</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../auto-racing/nas/player-news/headlines.html" data-drupal-link-system-path="auto-racing/nas/player-news/headlines">Headlines</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../features/nas.html" data-drupal-link-system-path="features/nas">Columns</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../videos/auto-racing/nas.html" data-drupal-link-system-path="videos/auto-racing/nas">Videos</a>
+        
+              </li>
+        </ul>
+  
+              </li>
+                <li class="menu-item">
+                  <a href="../../sports/cbb/college-basketball.html" data-drupal-link-system-path="node/210406">CBB</a>
+        
+              </li>
+        </ul>
+  
+              </li>
+                <li class="menu-item menu-item--expanded">
+                  <a href="../../daily.html" data-drupal-link-system-path="node/134341">DFS</a>
+        
+                                    <ul class="menu menu-level--1">
+                    <li class="menu-item">
+                  <a href="../../daily.html" data-drupal-link-system-path="node/134341">DFS Home</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../daily/nfl.html" data-drupal-link-system-path="node/134356">NFL DFS</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../daily/mlb.html" data-drupal-link-system-path="node/134361">MLB DFS</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../daily/nba.html" data-drupal-link-system-path="node/134376">NBA DFS</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../daily/nhl.html" data-drupal-link-system-path="node/134366">NHL DFS</a>
+        
+              </li>
+        </ul>
+  
+              </li>
+                <li class="menu-item menu-item--expanded">
+                  <a href="../../bet.html" data-drupal-link-system-path="node/165121">BET</a>
+        
+                                    <ul class="menu menu-level--1">
+                    <li class="menu-item">
+                  <a href="../../bet.html" data-drupal-link-system-path="node/165121">Betting Home</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../bet/warren-sharp.html" data-drupal-link-system-path="node/196656">Warren Sharp</a>
+        
+              </li>
+                <li class="menu-item menu-item--expanded">
+                  <a href="https://bet.rotoworld.com/nfl/live_odds">Live Odds</a>
+        
+                                    <ul class="menu menu-level--2">
+                    <li class="menu-item">
+                  <a href="https://bet.rotoworld.com/nfl/live_odds">NFL</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="https://bet.rotoworld.com/mlb/live_odds">MLB</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="https://bet.rotoworld.com/nba/live_odds">NBA</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="https://bet.rotoworld.com/nhl/live_odds">NHL</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="https://bet.rotoworld.com/cfb/live_odds">CFB</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="https://bet.rotoworld.com/cbb/live_odds">CBB</a>
+        
+              </li>
+        </ul>
+  
+              </li>
+                <li class="menu-item menu-item--expanded">
+                  <a href="https://bet.rotoworld.com/nfl/futures">Futures</a>
+        
+                                    <ul class="menu menu-level--2">
+                    <li class="menu-item">
+                  <a href="https://bet.rotoworld.com/nfl/futures">NFL</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="https://bet.rotoworld.com/mlb/futures">MLB</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="https://bet.rotoworld.com/nba/futures">NBA</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="https://bet.rotoworld.com/nhl/futures">NHL</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="https://bet.rotoworld.com/cfb/futures">CFB</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="https://bet.rotoworld.com/cbb/futures">CBB</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="https://bet.rotoworld.com/pl/futures">Premier League</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="https://bet.rotoworld.com/pga/futures">Golf</a>
+        
+              </li>
+        </ul>
+  
+              </li>
+                <li class="menu-item menu-item--expanded">
+                  <a href="https://bet.rotoworld.com/bet_tools/odds_converter">Calculators</a>
+        
+                                    <ul class="menu menu-level--2">
+                    <li class="menu-item">
+                  <a href="https://bet.rotoworld.com/bet_tools/odds_converter">Odds Converter</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="https://bet.rotoworld.com/bet_tools/parlay_calculator">Parlay Calculator</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="https://bet.rotoworld.com/bet_tools/hedge_calculator">Hedge Calculator</a>
+        
+              </li>
+        </ul>
+  
+              </li>
+        </ul>
+  
+              </li>
+        </ul>
+  
+
+
+  </nav>
+<nav role="navigation" aria-labelledby="block-secondarynavigation-menu" id="block-secondarynavigation" class="block block-menu navigation menu--secondary">
+            
+  <h2 class="visually-hidden" id="block-secondarynavigation-menu">Secondary navigation</h2>
+  
+
+        
+                  <ul class="menu secondary">
+                    <li class="menu-item">
+        <a href="https://sports.yahoo.com/fantasy/" target="_blank">Yahoo!</a>
+              </li>
+                <li class="menu-item">
+        <a href="http://forums.rotoworld.com/?ls=roto%3Aforums%3Agnav" target="_blank">Forums</a>
+              </li>
+                <li class="menu-item">
+        <a href="https://www.stubhub.com/?ref=nbcsports_rw" target="_blank">Tickets</a>
+              </li>
+                <li class="menu-item">
+        <a href="https://products.rotoworld.com/pricing" target="_blank">Products</a>
+              </li>
+                <li class="menu-item">
+        <a href="../../Frequently-Asked-Questions.html" target="_blank" data-drupal-link-system-path="node/145911">Help</a>
+              </li>
+        </ul>
+  
+
+
+  </nav>
+
+
+<div id="block-rwsearch" class="block block-rw-search block-rwsearch">
+  
+    
+      <div class="block__content">
+      <div id="rw-search-app"></div>
+    </div>
+  </div>
+
+
+        </div>
+      </div>
+              <div class="menu-shadow left"></div>
+      <div class="league-nav">
+        <div class="container">
+          
+                  <ul class="menu main">
+                    <li class="menu-item">
+                  <a href="../../sports/mlb/baseball.html" data-drupal-link-system-path="node/134321">MLB Home</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../baseball/mlb/player-news.html" data-drupal-link-system-path="baseball/mlb/player-news">Player News</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../baseball/mlb/player-news/headlines.html" data-drupal-link-system-path="baseball/mlb/player-news/headlines">Headlines</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="https://bet.rotoworld.com/mlb/live_odds">Live Odds</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="https://bet.rotoworld.com/mlb/futures">Futures</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../features/mlb.html" data-drupal-link-system-path="features/mlb">Columns</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../videos/baseball/mlb.html" data-drupal-link-system-path="videos/baseball/mlb">Videos</a>
+        
+              </li>
+                <li class="menu-item menu-item--collapsed">
+                  <a href="../../baseball/mlb/teams.html" data-drupal-link-system-path="baseball/mlb/teams">Teams</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../baseball/mlb/injury-report.html" data-drupal-link-system-path="baseball/mlb/injury-report">Injury Report</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../baseball/mlb/depth-charts.html" data-drupal-link-system-path="baseball/mlb/depth-charts">Depth Charts</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../baseball/mlb/standings.html" title="MLB Standings" data-drupal-link-system-path="baseball/mlb/standings">Standings</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../baseball/mlb/daily-lineups.html" title="MLB Daily Lineups" data-drupal-link-system-path="baseball/mlb/daily-lineups">Daily Lineups</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../baseball/mlb/player-news/transactions.html" data-drupal-link-system-path="baseball/mlb/player-news/transactions">Transactions</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../podcasts/mlb.html" title="Rotoworld Baseball Podcast" data-drupal-link-system-path="podcasts/mlb">Podcast</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../baseball/mlb/teams/arz/arizona-diamondbacks/contracts.html" data-drupal-link-system-path="baseball/mlb/teams/arz/arizona-diamondbacks/contracts">Contracts</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../daily/mlb.html" data-drupal-link-system-path="node/134361">DFS</a>
+        
+              </li>
+        </ul>
+  
+
+
+        </div>
+      </div>
+      <div class="menu-shadow right"></div>
+      </header>
+  
+        <div id="nav-mobile">
+        <div>
+    <nav role="navigation" aria-labelledby="block-mainnavigation-3-menu" id="block-mainnavigation-3" class="block block-menu navigation menu--main">
+            
+  <h2 class="visually-hidden" id="block-mainnavigation-3-menu">Main navigation</h2>
+  
+
+        
+                  <ul block="mainnavigation_3" class="menu main">
+                    <li class="menu-item menu-item--expanded">
+                  <a href="../../sports/nfl/football.html" data-drupal-link-system-path="node/134316">NFL</a>
+        
+                                    <ul class="menu menu-level--1">
+                    <li class="menu-item">
+                  <a href="../../sports/nfl/football.html" data-drupal-link-system-path="node/134316">NFL Home</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../football/nfl/player-news.html" data-drupal-link-system-path="football/nfl/player-news">Player News</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../football/nfl/player-news/headlines.html" data-drupal-link-system-path="football/nfl/player-news/headlines">Headlines</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="https://bet.rotoworld.com/nfl/live_odds">Live Odds</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="https://bet.rotoworld.com/nfl/futures">Futures</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../features/nfl.html" data-drupal-link-system-path="features/nfl">Columns</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../videos/football/nfl.html" data-drupal-link-system-path="videos/football/nfl">Videos</a>
+        
+              </li>
+                <li class="menu-item menu-item--expanded">
+                  <a href="../../football/nfl/teams.html" data-drupal-link-system-path="football/nfl/teams">Teams</a>
+        
+                                    <ul class="menu menu-level--2">
+                    <li class="menu-item">
+                  <a href="../../football/nfl/teams/arz/arizona-cardinals.html" data-drupal-link-system-path="team/116">Arizona Cardinals</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../football/nfl/teams/atl/atlanta-falcons.html" data-drupal-link-system-path="team/11">Atlanta Falcons</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../football/nfl/teams/bal/baltimore-ravens.html" data-drupal-link-system-path="team/161">Baltimore Ravens</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../football/nfl/teams/buf/buffalo-bills.html" data-drupal-link-system-path="team/16">Buffalo Bills</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../football/nfl/teams/car/carolina-panthers.html" data-drupal-link-system-path="team/151">Carolina Panthers</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../football/nfl/teams/chi/chicago-bears.html" data-drupal-link-system-path="team/21">Chicago Bears</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../football/nfl/teams/cin/cincinnati-bengals.html" data-drupal-link-system-path="team/26">Cincinnati Bengals</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../football/nfl/teams/cle/cleveland-browns.html" data-drupal-link-system-path="team/31">Cleveland Browns</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../football/nfl/teams/dal/dallas-cowboys.html" data-drupal-link-system-path="team/36">Dallas Cowboys</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../football/nfl/teams/den/denver-broncos.html" data-drupal-link-system-path="team/41">Denver Broncos</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../football/nfl/teams/det/detroit-lions.html" data-drupal-link-system-path="team/46">Detroit Lions</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../football/nfl/teams/gb/green-bay-packers.html" data-drupal-link-system-path="team/51">Green Bay Packers</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../football/nfl/teams/hou/houston-texans.html" data-drupal-link-system-path="team/166">Houston Texans</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../football/nfl/teams/ind/indianapolis-colts.html" data-drupal-link-system-path="team/61">Indianapolis Colts</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../football/nfl/teams/jac/jacksonville-jaguars.html" data-drupal-link-system-path="team/156">Jacksonville Jaguars</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../football/nfl/teams/kc/kansas-city-chiefs.html" data-drupal-link-system-path="team/66">Kansas City Chiefs</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../football/nfl/teams/lv/las-vegas-raiders.html">Las Vegas Raiders</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../football/nfl/teams/lac/los-angeles-chargers.html" data-drupal-link-system-path="team/126">Los Angeles Chargers</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../football/nfl/teams/lar/los-angeles-rams.html" data-drupal-link-system-path="team/76">Los Angeles Rams</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../football/nfl/teams/mia/miami-dolphins.html" data-drupal-link-system-path="team/81">Miami Dolphins</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../football/nfl/teams/min/minnesota-vikings.html" data-drupal-link-system-path="team/86">Minnesota Vikings</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../football/nfl/teams/ne/new-england-patriots.html" data-drupal-link-system-path="team/91">New England Patriots</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../football/nfl/teams/no/new-orleans-saints.html" data-drupal-link-system-path="team/96">New Orleans Saints</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../football/nfl/teams/nyg/new-york-giants.html" data-drupal-link-system-path="team/101">New York Giants</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../football/nfl/teams/nyj/new-york-jets.html" data-drupal-link-system-path="team/106">New York Jets</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../football/nfl/teams/phi/philadelphia-eagles.html" data-drupal-link-system-path="team/111">Philadelphia Eagles</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../football/nfl/teams/pit/pittsburgh-steelers.html" data-drupal-link-system-path="team/121">Pittsburgh Steelers</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../football/nfl/teams/sf/san-francisco-49ers.html" data-drupal-link-system-path="team/131">San Francisco 49ers</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../football/nfl/teams/sea/seattle-seahawks.html" data-drupal-link-system-path="team/136">Seattle Seahawks</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../football/nfl/teams/tb/tampa-bay-buccaneers.html" data-drupal-link-system-path="team/141">Tampa Bay Buccaneers</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../football/nfl/teams/ten/tennessee-titans.html" data-drupal-link-system-path="team/56">Tennessee Titans</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../football/nfl/teams/was/washington-football-team.html">Washington Football Team</a>
+        
+              </li>
+        </ul>
+  
+              </li>
+                <li class="menu-item">
+                  <a href="../../football/nfl/injury-report.html" data-drupal-link-system-path="football/nfl/injury-report">Injury Report</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../football/nfl/depth-charts.html" data-drupal-link-system-path="football/nfl/depth-charts">Depth Charts</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../football/nfl/standings.html" title="NFL Standings" data-drupal-link-system-path="football/nfl/standings">Standings</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../football/nfl/player-news/transactions.html" data-drupal-link-system-path="football/nfl/player-news/transactions">Transactions</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../podcasts/nfl.html" title="Rotoworld Football Podcast" data-drupal-link-system-path="podcasts/nfl">Podcast</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../football/nfl/teams/arz/arizona-cardinals/contracts.html" data-drupal-link-system-path="football/nfl/teams/arz/arizona-cardinals/contracts">Contracts</a>
+        
+              </li>
+        </ul>
+  
+              </li>
+                <li class="menu-item menu-item--expanded">
+                  <a href="../../sports/nba/basketball.html" data-drupal-link-system-path="node/134326">NBA</a>
+        
+                                    <ul class="menu menu-level--1">
+                    <li class="menu-item">
+                  <a href="../../sports/nba/basketball.html" data-drupal-link-system-path="node/134326">NBA Home</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="https://products.rotoworld.com/nba/draft-guide" title="Season Pass">Draft Guide</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../nba/mock-draft-simulator.html">Mock Draft Simulator</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../basketball/nba/player-news.html" data-drupal-link-system-path="basketball/nba/player-news">Player News</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../basketball/nba/player-news/headlines.html" data-drupal-link-system-path="basketball/nba/player-news/headlines">Headlines</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="https://bet.rotoworld.com/nba/live_odds">Live Odds</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="https://bet.rotoworld.com/nba/futures">Futures</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../features/nba.html" data-drupal-link-system-path="features/nba">Columns</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../videos/basketball/nba.html" data-drupal-link-system-path="videos/basketball/nba">Videos</a>
+        
+              </li>
+                <li class="menu-item menu-item--expanded">
+                  <a href="../../basketball/nba/teams.html" data-drupal-link-system-path="basketball/nba/teams">Teams</a>
+        
+                                    <ul class="menu menu-level--2">
+                    <li class="menu-item">
+                  <a href="../../basketball/nba/teams/atl/atlanta-hawks.html" data-drupal-link-system-path="team/176">Atlanta Hawks</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../basketball/nba/teams/bos/boston-celtics.html" data-drupal-link-system-path="team/181">Boston Celtics</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../basketball/nba/teams/bkn/brooklyn-nets.html" data-drupal-link-system-path="team/256">Brooklyn Nets</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../basketball/nba/teams/cha/charlotte-hornets.html" data-drupal-link-system-path="team/321">Charlotte Hornets</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../basketball/nba/teams/chi/chicago-bulls.html" data-drupal-link-system-path="team/191">Chicago Bulls</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../basketball/nba/teams/cle/cleveland-cavaliers.html" data-drupal-link-system-path="team/196">Cleveland Cavaliers</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../basketball/nba/teams/dal/dallas-mavericks.html" data-drupal-link-system-path="team/201">Dallas Mavericks</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../basketball/nba/teams/den/denver-nuggets.html" data-drupal-link-system-path="team/206">Denver Nuggets</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../basketball/nba/teams/det/detroit-pistons.html" data-drupal-link-system-path="team/211">Detroit Pistons</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../basketball/nba/teams/gs/golden-state-warriors.html" data-drupal-link-system-path="team/216">Golden State Warriors</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../basketball/nba/teams/hou/houston-rockets.html" data-drupal-link-system-path="team/221">Houston Rockets</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../basketball/nba/teams/ind/indiana-pacers.html" data-drupal-link-system-path="team/226">Indiana Pacers</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../basketball/nba/teams/lac/los-angeles-clippers.html" data-drupal-link-system-path="team/231">Los Angeles Clippers</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../basketball/nba/teams/lak/los-angeles-lakers.html" data-drupal-link-system-path="team/236">Los Angeles Lakers</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../basketball/nba/teams/mem/memphis-grizzlies.html" data-drupal-link-system-path="team/316">Memphis Grizzlies</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../basketball/nba/teams/mia/miami-heat.html" data-drupal-link-system-path="team/241">Miami Heat</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../basketball/nba/teams/mlw/milwaukee-bucks.html" data-drupal-link-system-path="team/246">Milwaukee Bucks</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../basketball/nba/teams/min/minnesota-timberwolves.html" data-drupal-link-system-path="team/251">Minnesota Timberwolves</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../basketball/nba/teams/no/new-orleans-pelicans.html" data-drupal-link-system-path="team/186">New Orleans Pelicans</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../basketball/nba/teams/ny/new-york-knicks.html" data-drupal-link-system-path="team/261">New York Knicks</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../basketball/nba/teams/okc/oklahoma-city-thunder.html" data-drupal-link-system-path="team/296">Oklahoma City Thunder</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../basketball/nba/teams/orl/orlando-magic.html" data-drupal-link-system-path="team/266">Orlando Magic</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../basketball/nba/teams/phi/philadelphia-76ers.html" data-drupal-link-system-path="team/271">Philadelphia 76ers</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../basketball/nba/teams/pho/phoenix-suns.html" data-drupal-link-system-path="team/276">Phoenix Suns</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../basketball/nba/teams/por/portland-trail-blazers.html" data-drupal-link-system-path="team/281">Portland Trail Blazers</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../basketball/nba/teams/sac/sacramento-kings.html" data-drupal-link-system-path="team/286">Sacramento Kings</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../basketball/nba/teams/sa/san-antonio-spurs.html" data-drupal-link-system-path="team/291">San Antonio Spurs</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../basketball/nba/teams/tor/toronto-raptors.html" data-drupal-link-system-path="team/311">Toronto Raptors</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../basketball/nba/teams/uta/utah-jazz.html" data-drupal-link-system-path="team/301">Utah Jazz</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../basketball/nba/teams/was/washington-wizards.html" data-drupal-link-system-path="team/306">Washington Wizards</a>
+        
+              </li>
+        </ul>
+  
+              </li>
+                <li class="menu-item">
+                  <a href="../../basketball/nba/injury-report.html" data-drupal-link-system-path="basketball/nba/injury-report">Injury Report</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../basketball/nba/depth-charts.html" data-drupal-link-system-path="basketball/nba/depth-charts">Depth Charts</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../basketball/nba/standings.html" title="NBA Standings" data-drupal-link-system-path="basketball/nba/standings">Standings</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../basketball/nba/player-news/transactions.html" data-drupal-link-system-path="basketball/nba/player-news/transactions">Transactions</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../podcasts/nba.html" title="Rotoworld Fantasy Basketball Podcast" data-drupal-link-system-path="podcasts/nba">Podcast</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../basketball/nba/teams/atl/atlanta-hawks/contracts.html" data-drupal-link-system-path="basketball/nba/teams/atl/atlanta-hawks/contracts">Contracts</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../daily/nba.html" data-drupal-link-system-path="node/134376">DFS</a>
+        
+              </li>
+        </ul>
+  
+              </li>
+                <li class="menu-item menu-item--expanded">
+                  <a href="../../sports/mlb/baseball.html" data-drupal-link-system-path="node/134321">MLB</a>
+        
+                                    <ul class="menu menu-level--1">
+                    <li class="menu-item">
+                  <a href="../../sports/mlb/baseball.html" data-drupal-link-system-path="node/134321">MLB Home</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../baseball/mlb/player-news.html" data-drupal-link-system-path="baseball/mlb/player-news">Player News</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../baseball/mlb/player-news/headlines.html" data-drupal-link-system-path="baseball/mlb/player-news/headlines">Headlines</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="https://bet.rotoworld.com/mlb/live_odds">Live Odds</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="https://bet.rotoworld.com/mlb/futures">Futures</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../features/mlb.html" data-drupal-link-system-path="features/mlb">Columns</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../videos/baseball/mlb.html" data-drupal-link-system-path="videos/baseball/mlb">Videos</a>
+        
+              </li>
+                <li class="menu-item menu-item--expanded">
+                  <a href="../../baseball/mlb/teams.html" data-drupal-link-system-path="baseball/mlb/teams">Teams</a>
+        
+                                    <ul class="menu menu-level--2">
+                    <li class="menu-item">
+                  <a href="../../baseball/mlb/teams/arz/arizona-diamondbacks.html" data-drupal-link-system-path="team/641">Arizona Diamondbacks</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../baseball/mlb/teams/atl/atlanta-braves.html" data-drupal-link-system-path="team/571">Atlanta Braves</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../baseball/mlb/teams/bal/baltimore-orioles.html" data-drupal-link-system-path="team/501">Baltimore Orioles</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../baseball/mlb/teams/bos/boston-red-sox.html" data-drupal-link-system-path="team/506">Boston Red Sox</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../baseball/mlb/teams/chc/chicago-cubs.html" data-drupal-link-system-path="team/576">Chicago Cubs</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../baseball/mlb/teams/cws/chicago-white-sox.html" data-drupal-link-system-path="team/516">Chicago White Sox</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../baseball/mlb/teams/cin/cincinnati-reds.html" data-drupal-link-system-path="team/581">Cincinnati Reds</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../baseball/mlb/teams/cle/cleveland-indians.html" data-drupal-link-system-path="team/521">Cleveland Indians</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../baseball/mlb/teams/col/colorado-rockies.html" data-drupal-link-system-path="team/631">Colorado Rockies</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../baseball/mlb/teams/det/detroit-tigers.html" data-drupal-link-system-path="team/526">Detroit Tigers</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../baseball/mlb/teams/hou/houston-astros.html" data-drupal-link-system-path="team/586">Houston Astros</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../baseball/mlb/teams/kc/kansas-city-royals.html" data-drupal-link-system-path="team/531">Kansas City Royals</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../baseball/mlb/teams/laa/los-angeles-angels.html" data-drupal-link-system-path="team/511">Los Angeles Angels</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../baseball/mlb/teams/la/los-angeles-dodgers.html" data-drupal-link-system-path="team/591">Los Angeles Dodgers</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../baseball/mlb/teams/mia/miami-marlins.html" data-drupal-link-system-path="team/636">Miami Marlins</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../baseball/mlb/teams/mlw/milwaukee-brewers.html" data-drupal-link-system-path="team/536">Milwaukee Brewers</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../baseball/mlb/teams/min/minnesota-twins.html" data-drupal-link-system-path="team/541">Minnesota Twins</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../baseball/mlb/teams/nym/new-york-mets.html" data-drupal-link-system-path="team/601">New York Mets</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../baseball/mlb/teams/nyy/new-york-yankees.html" data-drupal-link-system-path="team/546">New York Yankees</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../baseball/mlb/teams/oak/oakland-athletics.html" data-drupal-link-system-path="team/551">Oakland Athletics</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../baseball/mlb/teams/phi/philadelphia-phillies.html" data-drupal-link-system-path="team/606">Philadelphia Phillies</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../baseball/mlb/teams/pit/pittsburgh-pirates.html" data-drupal-link-system-path="team/611">Pittsburgh Pirates</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../baseball/mlb/teams/sd/san-diego-padres.html" data-drupal-link-system-path="team/621">San Diego Padres</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../baseball/mlb/teams/sf/san-francisco-giants.html" data-drupal-link-system-path="team/626">San Francisco Giants</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../baseball/mlb/teams/sea/seattle-mariners.html" data-drupal-link-system-path="team/556">Seattle Mariners</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../baseball/mlb/teams/stl/st-louis-cardinals.html" data-drupal-link-system-path="team/616">St. Louis Cardinals</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../baseball/mlb/teams/tb/tampa-bay-rays.html" data-drupal-link-system-path="team/646">Tampa Bay Rays</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../baseball/mlb/teams/tex/texas-rangers.html" data-drupal-link-system-path="team/561">Texas Rangers</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../baseball/mlb/teams/tor/toronto-blue-jays.html" data-drupal-link-system-path="team/566">Toronto Blue Jays</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../baseball/mlb/teams/was/washington-nationals.html" data-drupal-link-system-path="team/596">Washington Nationals</a>
+        
+              </li>
+        </ul>
+  
+              </li>
+                <li class="menu-item">
+                  <a href="../../baseball/mlb/injury-report.html" data-drupal-link-system-path="baseball/mlb/injury-report">Injury Report</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../baseball/mlb/depth-charts.html" data-drupal-link-system-path="baseball/mlb/depth-charts">Depth Charts</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../baseball/mlb/standings.html" title="MLB Standings" data-drupal-link-system-path="baseball/mlb/standings">Standings</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../baseball/mlb/daily-lineups.html" title="MLB Daily Lineups" data-drupal-link-system-path="baseball/mlb/daily-lineups">Daily Lineups</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../baseball/mlb/player-news/transactions.html" data-drupal-link-system-path="baseball/mlb/player-news/transactions">Transactions</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../podcasts/mlb.html" title="Rotoworld Baseball Podcast" data-drupal-link-system-path="podcasts/mlb">Podcast</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../baseball/mlb/teams/arz/arizona-diamondbacks/contracts.html" data-drupal-link-system-path="baseball/mlb/teams/arz/arizona-diamondbacks/contracts">Contracts</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../daily/mlb.html" data-drupal-link-system-path="node/134361">DFS</a>
+        
+              </li>
+        </ul>
+  
+              </li>
+                <li class="menu-item menu-item--expanded">
+                  <a href="../../sports/nhl/hockey.html" data-drupal-link-system-path="node/134331">NHL</a>
+        
+                                    <ul class="menu menu-level--1">
+                    <li class="menu-item">
+                  <a href="../../sports/nhl/hockey.html" data-drupal-link-system-path="node/134331">NHL Home</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="https://products.rotoworld.com/nhl/season-pass" title="NHL Season Pass">Season Pass</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../hockey/nhl/player-news.html" data-drupal-link-system-path="hockey/nhl/player-news">Player News</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../hockey/nhl/player-news/headlines.html" data-drupal-link-system-path="hockey/nhl/player-news/headlines">Headlines</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="https://bet.rotoworld.com/nhl/live_odds">Live Odds</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="https://bet.rotoworld.com/nhl/futures">Futures</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../nhl/mock-draft-simulator.html" data-drupal-link-system-path="node/211796">Mock Draft Simulator</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../features/nhl.html" data-drupal-link-system-path="features/nhl">Columns</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../videos/hockey/nhl.html" data-drupal-link-system-path="videos/hockey/nhl">Videos</a>
+        
+              </li>
+                <li class="menu-item menu-item--expanded">
+                  <a href="../../hockey/nhl/teams.html" data-drupal-link-system-path="hockey/nhl/teams">Teams</a>
+        
+                                    <ul class="menu menu-level--2">
+                    <li class="menu-item">
+                  <a href="../../hockey/nhl/teams/ana/anaheim-ducks.html" data-drupal-link-system-path="team/451">Anaheim Ducks</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../hockey/nhl/teams/ari/arizona-coyotes.html" data-drupal-link-system-path="team/446">Arizona Coyotes</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../hockey/nhl/teams/bos/boston-bruins.html" data-drupal-link-system-path="team/331">Boston Bruins</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../hockey/nhl/teams/buf/buffalo-sabres.html" data-drupal-link-system-path="team/336">Buffalo Sabres</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../hockey/nhl/teams/cal/calgary-flames.html" data-drupal-link-system-path="team/341">Calgary Flames</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../hockey/nhl/teams/car/carolina-hurricanes.html" data-drupal-link-system-path="team/361">Carolina Hurricanes</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../hockey/nhl/teams/chi/chicago-blackhawks.html" data-drupal-link-system-path="team/346">Chicago Blackhawks</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../hockey/nhl/teams/col/colorado-avalanche.html" data-drupal-link-system-path="team/411">Colorado Avalanche</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../hockey/nhl/teams/clm/columbus-blue-jackets.html" data-drupal-link-system-path="team/471">Columbus Blue Jackets</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../hockey/nhl/teams/dal/dallas-stars.html" data-drupal-link-system-path="team/371">Dallas Stars</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../hockey/nhl/teams/det/detroit-red-wings.html" data-drupal-link-system-path="team/351">Detroit Red Wings</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../hockey/nhl/teams/edm/edmonton-oilers.html" data-drupal-link-system-path="team/356">Edmonton Oilers</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../hockey/nhl/teams/fla/florida-panthers.html" data-drupal-link-system-path="team/456">Florida Panthers</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../hockey/nhl/teams/la/los-angeles-kings.html" data-drupal-link-system-path="team/366">Los Angeles Kings</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../hockey/nhl/teams/min/minnesota-wild.html" data-drupal-link-system-path="team/476">Minnesota Wild</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../hockey/nhl/teams/mon/montreal-canadiens.html" data-drupal-link-system-path="team/376">Montreal Canadiens</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../hockey/nhl/teams/nas/nashville-predators.html" data-drupal-link-system-path="team/461">Nashville Predators</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../hockey/nhl/teams/nj/new-jersey-devils.html" data-drupal-link-system-path="team/381">New Jersey Devils</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../hockey/nhl/teams/nyi/new-york-islanders.html" data-drupal-link-system-path="team/386">New York Islanders</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../hockey/nhl/teams/nyr/new-york-rangers.html" data-drupal-link-system-path="team/391">New York Rangers</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../hockey/nhl/teams/ott/ottawa-senators.html" data-drupal-link-system-path="team/396">Ottawa Senators</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../hockey/nhl/teams/phi/philadelphia-flyers.html" data-drupal-link-system-path="team/401">Philadelphia Flyers</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../hockey/nhl/teams/pit/pittsburgh-penguins.html" data-drupal-link-system-path="team/406">Pittsburgh Penguins</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../hockey/nhl/teams/sj/san-jose-sharks.html" data-drupal-link-system-path="team/416">San Jose Sharks</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../hockey/nhl/teams/stl/st-louis-blues.html" data-drupal-link-system-path="team/421">St. Louis Blues</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../hockey/nhl/teams/tb/tampa-bay-lightning.html" data-drupal-link-system-path="team/426">Tampa Bay Lightning</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../hockey/nhl/teams/tor/toronto-maple-leafs.html" data-drupal-link-system-path="team/431">Toronto Maple Leafs</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../hockey/nhl/teams/van/vancouver-canucks.html" data-drupal-link-system-path="team/436">Vancouver Canucks</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../hockey/nhl/teams/vgk/vegas-golden-knights.html" data-drupal-link-system-path="team/481">Vegas Golden Knights</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../hockey/nhl/teams/was/washington-capitals.html" data-drupal-link-system-path="team/441">Washington Capitals</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../hockey/nhl/teams/wpg/winnipeg-jets.html" data-drupal-link-system-path="team/466">Winnipeg Jets</a>
+        
+              </li>
+        </ul>
+  
+              </li>
+                <li class="menu-item">
+                  <a href="../../hockey/nhl/injury-report.html" data-drupal-link-system-path="hockey/nhl/injury-report">Injury Report</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../hockey/nhl/depth-charts.html" data-drupal-link-system-path="hockey/nhl/depth-charts">Depth Charts</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../hockey/nhl/standings.html" title="NHL Standings" data-drupal-link-system-path="hockey/nhl/standings">Standings</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../hockey/nhl/player-news/transactions.html" data-drupal-link-system-path="hockey/nhl/player-news/transactions">Transactions</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../hockey/nhl/teams/ana/anaheim-ducks/contracts.html" data-drupal-link-system-path="hockey/nhl/teams/ana/anaheim-ducks/contracts">Contracts</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../daily/nhl.html" data-drupal-link-system-path="node/134366">DFS</a>
+        
+              </li>
+        </ul>
+  
+              </li>
+                <li class="menu-item menu-item--expanded">
+                  <a href="../../sports/cfb/college-football.html" data-drupal-link-system-path="node/134351">CFB</a>
+        
+                                    <ul class="menu menu-level--1">
+                    <li class="menu-item">
+                  <a href="../../sports/cfb/college-football.html" data-drupal-link-system-path="node/134351">CFB Home</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../college-football/cfb/player-news.html" data-drupal-link-system-path="college-football/cfb/player-news">Player News</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../college-football/cfb/player-news/headlines.html" data-drupal-link-system-path="college-football/cfb/player-news/headlines">Headlines</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="https://bet.rotoworld.com/cfb/live_odds">Live Odds</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="https://bet.rotoworld.com/cfb/futures">Futures</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../features/cfb.html" data-drupal-link-system-path="features/cfb">Columns</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../videos/college-football/cfb.html" data-drupal-link-system-path="videos/college-football/cfb">Videos</a>
+        
+              </li>
+        </ul>
+  
+              </li>
+                <li class="menu-item menu-item--expanded">
+                  <a href="../../index.html" class="js-menu-item-more main__more-menu-item" data-drupal-link-system-path="&lt;front&gt;">More</a>
+        
+                                    <ul class="menu menu-level--1">
+                    <li class="menu-item menu-item--expanded">
+                  <a href="../../sports/golf/golf.html" data-drupal-link-system-path="node/134381">Golf</a>
+        
+                                    <ul class="menu menu-level--2">
+                    <li class="menu-item">
+                  <a href="../../sports/golf/golf.html" data-drupal-link-system-path="node/134381">Golf Home</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../golf/golf/player-news.html" data-drupal-link-system-path="golf/golf/player-news">Player News</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../golf/golf/player-news/headlines.html" data-drupal-link-system-path="golf/golf/player-news/headlines">Headlines</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="https://bet.rotoworld.com/pga/tournaments">Live Leaderboard</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="https://bet.rotoworld.com/pga/futures">Futures</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../features/golf.html" data-drupal-link-system-path="features/golf">Columns</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../videos/golf/golf.html" data-drupal-link-system-path="videos/golf/golf">Videos</a>
+        
+              </li>
+                <li class="menu-item menu-item--collapsed">
+                  <a href="../../golf/golf/injury-report.html" data-drupal-link-system-path="golf/golf/injury-report">Injury Report</a>
+        
+              </li>
+        </ul>
+  
+              </li>
+                <li class="menu-item menu-item--expanded">
+                  <a href="../../sports/pl/soccer.html" data-drupal-link-system-path="node/134346">Premier League</a>
+        
+                                    <ul class="menu menu-level--2">
+                    <li class="menu-item">
+                  <a href="../../sports/pl/soccer.html" data-drupal-link-system-path="node/134346">PL Home</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../soccer/pl/player-news.html" data-drupal-link-system-path="soccer/pl/player-news">Player News</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../soccer/pl/player-news/headlines.html" data-drupal-link-system-path="soccer/pl/player-news/headlines">Headlines</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="https://bet.rotoworld.com/pl/futures">Futures</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../videos/soccer/pl.html" data-drupal-link-system-path="videos/soccer/pl">Videos</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../soccer/pl/teams.html" data-drupal-link-system-path="soccer/pl/teams">Teams</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../soccer/pl/depth-charts.html" data-drupal-link-system-path="soccer/pl/depth-charts">Depth Charts</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../soccer/pl/injury-report.html" data-drupal-link-system-path="soccer/pl/injury-report">Injury Report</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../soccer/pl/player-news/transactions.html" data-drupal-link-system-path="soccer/pl/player-news/transactions">Transactions</a>
+        
+              </li>
+        </ul>
+  
+              </li>
+                <li class="menu-item menu-item--expanded">
+                  <a href="../../sports/nas/auto-racing.html" data-drupal-link-system-path="node/134386">NASCAR</a>
+        
+                                    <ul class="menu menu-level--2">
+                    <li class="menu-item">
+                  <a href="../../sports/nas/auto-racing.html" data-drupal-link-system-path="node/134386">NASCAR Home</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../auto-racing/nas/player-news.html" data-drupal-link-system-path="auto-racing/nas/player-news">Player News</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../auto-racing/nas/player-news/headlines.html" data-drupal-link-system-path="auto-racing/nas/player-news/headlines">Headlines</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../features/nas.html" data-drupal-link-system-path="features/nas">Columns</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../videos/auto-racing/nas.html" data-drupal-link-system-path="videos/auto-racing/nas">Videos</a>
+        
+              </li>
+        </ul>
+  
+              </li>
+                <li class="menu-item">
+                  <a href="../../sports/cbb/college-basketball.html" data-drupal-link-system-path="node/210406">CBB</a>
+        
+              </li>
+        </ul>
+  
+              </li>
+                <li class="menu-item menu-item--expanded">
+                  <a href="../../daily.html" data-drupal-link-system-path="node/134341">DFS</a>
+        
+                                    <ul class="menu menu-level--1">
+                    <li class="menu-item">
+                  <a href="../../daily.html" data-drupal-link-system-path="node/134341">DFS Home</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../daily/nfl.html" data-drupal-link-system-path="node/134356">NFL DFS</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../daily/mlb.html" data-drupal-link-system-path="node/134361">MLB DFS</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../daily/nba.html" data-drupal-link-system-path="node/134376">NBA DFS</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../daily/nhl.html" data-drupal-link-system-path="node/134366">NHL DFS</a>
+        
+              </li>
+        </ul>
+  
+              </li>
+                <li class="menu-item menu-item--expanded">
+                  <a href="../../bet.html" data-drupal-link-system-path="node/165121">BET</a>
+        
+                                    <ul class="menu menu-level--1">
+                    <li class="menu-item">
+                  <a href="../../bet.html" data-drupal-link-system-path="node/165121">Betting Home</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="../../bet/warren-sharp.html" data-drupal-link-system-path="node/196656">Warren Sharp</a>
+        
+              </li>
+                <li class="menu-item menu-item--expanded">
+                  <a href="https://bet.rotoworld.com/nfl/live_odds">Live Odds</a>
+        
+                                    <ul class="menu menu-level--2">
+                    <li class="menu-item">
+                  <a href="https://bet.rotoworld.com/nfl/live_odds">NFL</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="https://bet.rotoworld.com/mlb/live_odds">MLB</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="https://bet.rotoworld.com/nba/live_odds">NBA</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="https://bet.rotoworld.com/nhl/live_odds">NHL</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="https://bet.rotoworld.com/cfb/live_odds">CFB</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="https://bet.rotoworld.com/cbb/live_odds">CBB</a>
+        
+              </li>
+        </ul>
+  
+              </li>
+                <li class="menu-item menu-item--expanded">
+                  <a href="https://bet.rotoworld.com/nfl/futures">Futures</a>
+        
+                                    <ul class="menu menu-level--2">
+                    <li class="menu-item">
+                  <a href="https://bet.rotoworld.com/nfl/futures">NFL</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="https://bet.rotoworld.com/mlb/futures">MLB</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="https://bet.rotoworld.com/nba/futures">NBA</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="https://bet.rotoworld.com/nhl/futures">NHL</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="https://bet.rotoworld.com/cfb/futures">CFB</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="https://bet.rotoworld.com/cbb/futures">CBB</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="https://bet.rotoworld.com/pl/futures">Premier League</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="https://bet.rotoworld.com/pga/futures">Golf</a>
+        
+              </li>
+        </ul>
+  
+              </li>
+                <li class="menu-item menu-item--expanded">
+                  <a href="https://bet.rotoworld.com/bet_tools/odds_converter">Calculators</a>
+        
+                                    <ul class="menu menu-level--2">
+                    <li class="menu-item">
+                  <a href="https://bet.rotoworld.com/bet_tools/odds_converter">Odds Converter</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="https://bet.rotoworld.com/bet_tools/parlay_calculator">Parlay Calculator</a>
+        
+              </li>
+                <li class="menu-item">
+                  <a href="https://bet.rotoworld.com/bet_tools/hedge_calculator">Hedge Calculator</a>
+        
+              </li>
+        </ul>
+  
+              </li>
+        </ul>
+  
+              </li>
+        </ul>
+  
+
+
+  </nav>
+<nav role="navigation" aria-labelledby="block-premiumnavigation-2-menu" id="block-premiumnavigation-2" class="block block-menu navigation menu--premium">
+            
+  <h2 class="visually-hidden" id="block-premiumnavigation-2-menu">Premium navigation</h2>
+  
+
+        
+                      <ul block="premiumnavigation_2" class="menu premium">
+        <li class="menu-item menu-item--expanded"><a href="#">Premium</a>
+          <ul class="menu">
+
+                      
+            <li class="menu-item menu-item--expanded draft-guide premium-menu-draft-guide">
+                            
+              <a href="#premium-menu-draft-guide">                Draft Guide
+              </a>
+                          </li>
+                      
+            <li class="menu-item menu-item--expanded season-tools premium-menu-season-pass">
+                            
+              <a href="#premium-menu-season-pass">                Season Tools
+              </a>
+                          </li>
+                      
+            <li class="menu-item menu-item--expanded dfs-tools premium-menu-dfs-toolkit">
+                            
+              <a href="#premium-menu-dfs-toolkit">                DFS Tools
+              </a>
+                          </li>
+                      
+            <li class="menu-item menu-item--expanded betting-tools premium-menu-betting-tools">
+                            
+              <a href="#premium-menu-betting-tools">                Betting Tools
+              </a>
+                          </li>
+          
+          </ul>
+        </li>
+      </ul>
+      
+
+
+  </nav>
+
+
+<div id="block-rwusermenu-2" class="block block-rw block-rwusermenu-2">
+  
+    
+      <div class="block__content">
+      <div id="rw-user-menu"></div>
+
+    </div>
+  </div>
+<nav role="navigation" aria-labelledby="block-secondarynavigation-2-menu" id="block-secondarynavigation-2" class="block block-menu navigation menu--secondary">
+            
+  <h2 class="visually-hidden" id="block-secondarynavigation-2-menu">Secondary navigation</h2>
+  
+
+        
+                  <ul class="menu secondary">
+                    <li class="menu-item">
+        <a href="https://sports.yahoo.com/fantasy/" target="_blank">Yahoo!</a>
+              </li>
+                <li class="menu-item">
+        <a href="http://forums.rotoworld.com/?ls=roto%3Aforums%3Agnav" target="_blank">Forums</a>
+              </li>
+                <li class="menu-item">
+        <a href="https://www.stubhub.com/?ref=nbcsports_rw" target="_blank">Tickets</a>
+              </li>
+                <li class="menu-item">
+        <a href="https://products.rotoworld.com/pricing" target="_blank">Products</a>
+              </li>
+                <li class="menu-item">
+        <a href="../../Frequently-Asked-Questions.html" target="_blank" data-drupal-link-system-path="node/145911">Help</a>
+              </li>
+        </ul>
+  
+
+
+  </nav>
+
+  </div>
+
+    </div>
+    <div id="nav-mobile-overlay"></div>
+    
+<div id="main" class="content-wrapper">
+      <div class="container">
+      <div class="cols-12">
+          <div>
+    
+  </div>
+
+
+        
+
+        
+
+        
+        
+        
+
+        
+              </div>
+    </div>
+
+    
+    <div  class="page-wrapper--sidebar page-wrapper--sidebar-initial container clearfix page-wrapper">
+                    <aside class="sidebar cols-4">
+            
+<div class="block__top-ad">
+  
+
+<div id="block-mps-ad-sidebar-top" class="block block-rw-mps block-mps-ad-sidebar-top">
+  
+    
+      <div class="mps-ad mps-ad-boxad">
+  <script>(function(a,d){if(!a||!window.mps||!mps._queue)return 0;mps._queue.gptloaded.push(function(){mps.insertAd(a,d)})})(document.scripts[document.scripts.length-1].parentNode,'boxad');</script>
+</div>
+
+  </div>
+</div>
+
+
+<div class="block__headlines">
+  
+
+<div id="block-rwheadline" class="block block-rw-player-news block-rwheadline">
+  
+    
+      <div id="rw-headline-app"></div>
+
+  </div>
+</div>
+
+
+<div id="block-mpsad-boxadtwo" class="block block-rw-mps block-mpsad-boxadtwo">
+  
+    
+      <div class="block__content">
+      <div class="mps-ad mps-ad-boxadtwo">
+  <script>(function(a,d){if(!a||!window.mps||!mps._queue)return 0;mps._queue.gptloaded.push(function(){mps.insertAd(a,d)})})(document.scripts[document.scripts.length-1].parentNode,'boxadtwo');</script>
+</div>
+
+    </div>
+  </div>
+
+
+<div id="block-rw-column-author-archive" class="block block-rw-column block-rw-column-author-archive">
+  
+    
+      <div id="rw-latest-by-author"></div>
+
+  </div>
+
+
+<div id="block-rw-column-column-archive" class="block block-rw-column block-rw-column-column-archive">
+  
+    
+      <div id="rw-latest-by-column"></div>
+
+  </div>
+
+
+<div id="block-trendingplayers-2" class="block block-rw-player block-trendingplayers-2">
+  
+    
+      <div class="block__content">
+      <div id="rw-trending-app"></div>
+
+    </div>
+  </div>
+
+
+<div id="block-rwmedialatestvideos-sidebar" class="block block-rw-media block-rwmedialatestvideos-sidebar">
+  
+    
+      <div id="rw-latest-svods"></div>
+
+  </div>
+
+
+        </aside>
+            
+                          
+      
+      
+      
+      
+      <div class="content content--main cols-8">
+          <div data-drupal-messages-fallback class="hidden"></div>
+
+<div id="block-mainpagecontent-2" class="block block-system block-mainpagecontent-2">
+  
+    
+      <div class="block__content">
+      
+
+
+<article role="article" class="article article--full">
+      <div class="article-full__image">
+      
+            <div class="article__article-hero-image"><article class="image__media-image">
+  
+      
+      <picture>
+                <!--[if IE 9]><video style="display: none;"><![endif]-->
+              <source srcset="/sites/default/files/styles/article_full_desktop/public/2021-01/Civale_USA.jpg?itok=QTlm6tvo 1x, /sites/default/files/styles/article_full_desktop_2x/public/2021-01/Civale_USA.jpg?itok=IxAX8Z8a 2x" media="all and (min-width: 1024px)" type="image/jpeg"/>
+              <source srcset="/sites/default/files/styles/full_width_mobile/public/2021-01/Civale_USA.jpg?itok=ZKNuGeHm 1x, /sites/default/files/styles/full_width_mobile_2x/public/2021-01/Civale_USA.jpg?itok=6f6VmcqM 2x" media="all and (min-width: 0)" type="image/jpeg"/>
+            <!--[if IE 9]></video><![endif]-->
+            <img src="../../sites/default/files/styles/article_full_desktop_2x/public/2021-01/Civale_USA66a9.jpg?itok=IxAX8Z8a" alt="Aaron Civale" />
+
+  </picture>
+
+
+
+            <div class="image__media-source">Charles LeClaire-USA TODAY Sports</div>
+      
+  </article>
+</div>
+      
+    </div>
+  
+  <div class="article-full__wrapper">
+    <div class="article-full__type">
+      <div class="column">
+      
+            <div class="column__name">Draft Strategy</div>
+      
+  
+  </div>
+
+    </div>
+
+    <h1 class="article__title article-full__title">
+      <span>5x5 Sleepers: WHIP</span>
+
+    </h1>
+
+    <header class="article-full__header">
+      <div class="article-full__author-image">
+        
+            <div class="article__article-author">
+  <article class="image__media-image">
+  
+      
+    <img src="../../sites/default/files/authors/171.jpg" width="80" height="80" alt="Seth Trachtman" />
+
+
+
+  </article>
+
+
+</div>
+      
+      </div>
+      <div class="article-full__author-info">
+                  <div class="article-full__author-name article-full__author-name--header">
+            by
+            Seth Trachtman
+          </div>
+        
+        <div class="article-full__publish-date">
+          
+            <div class="article__article-published-date"><time datetime="2020-12-30T17:59:57Z">December 30, 2020, 12:59 pm ET</time>
+</div>
+      
+        </div>
+
+                          <div class="article-full__updated-date">
+            Updated On: January 11, 2021, 12:30 am ET
+          </div>
+              </div>
+
+      <div class="article-full__share">
+        <span class="a2a_kit a2a_kit_size_32 addtoany_list" data-a2a-url="https://www.rotoworld.com/article/draft-strategy/5x5-sleepers-whip" data-a2a-title="5x5 Sleepers: WHIP"><a class="a2a_button_facebook"></a><a class="a2a_button_twitter"></a><a class="a2a_button_reddit"></a><a class="a2a_button_email"></a></span>
+
+        
+<span class="a2a_kit_size_32 addtoany_list addtoany_list--last">
+  <a class="a2a_button_print" target="_blank" href="../../node/211346/printable/print.html" rel="nofollow">
+    <span class="a2a_svg a2a_s__default a2a_s_print" style="background-color: rgb(1, 102, 255);">
+      <svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M22.5 19.59V24h-13v-4.41z" fill="#fff" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.4"></path><path d="M9.44 21.12H6.38a.8.8 0 0 1-.87-.7v-7.35a.8.8 0 0 1 .88-.7h19.23a.8.8 0 0 1 .88.7v7.35a.8.8 0 0 1-.88.7h-3.06" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.4"></path><path d="M22.5 12.32V8h-13v4.28" fill="#fff" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.4"></path></svg>
+    </span>
+    <span class="a2a_label">Print</span>
+  </a>
+</span>
+
+      </div>
+    </header>
+
+    <section class="article-full__body">
+      
+      <div class="article__article-body">
+              <div><p><span><span><span><span><span><span><span>It’s never too early to prepare for your draft, and some of us draft fiends are already setting our draft dates for 2021 or even drafting now. The hot stove league is just taking shape, but it’s still a fun time to look toward the 2021 fantasy baseball season.</span></span></span></span></span></span></span><span><span><span><span><span> </span></span></span></span></span></p>
+<p><span><span><span><span><span><span><span>For the seventh year in a row, I’ll be breaking down category sleepers at each of the 5x5 roto categories. The first installment of the series was batting average sleepers. This week, we’ll be looking at possible WHIP sleepers. Over 10 weeks, I will be providing a list of sleepers for each 5x5 roto category (BA, HR, RBI, R, SB, W, ERA, WHIP, K, SV).  Since the hot stove league still has a long way to go this offseason, for the next few weeks we will focus on players in categories that are less based on opportunity and more based on skill.  Other roto categories that are more dependent on opportunity, supporting cast, and batting order spot (R, RBI, SB) or team and manager (W, SV) will be discussed in the latter half of the 10-week series.</span></span></span></span></span></span></span><span><span><span><span><span> </span></span></span></span></span></p>
+<p><span><span><span><span><span><span><span>Before reading any further, it’s important to note the definition of a sleeper. In this case, it’s a player who will exceed draft day ADP AND projections in a particular category. The players are broken down by mixed league sleepers and single league sleepers.</span></span></span></span></span></span></span><div id="rotoAthena"></div><script>window.mps&&mps._queue.gptloaded.push(function(){mps._ready(function(){mps.insertAd('#rotoAthena','athena');})});</script></p>
+<p><span><span><span>Fantasy owners, especially those new to the game, often have a bias toward ERA given that it’s the category most often quoted as we learn the game. However, WHIP is just as important, with recent pitchers like <a href="../../baseball/mlb/player/20660/joe-musgrove.html" hreflang="und" target="_blank">Joe Musgrove</a> making a living on fantasy rosters for their WHIP contributions.</span></span></span></p>
+<p><span><span><span>It’s simple enough to say that good control creates a WHIP asset for fantasy owners, but the table below is proof. The following table shows data from pitchers with at least 10 major league starts in the given year, proving just how important control is to finding pitchers who will help your WHIP.</span></span></span></p>
+<p><span><span><span>Note: 2020 omitted due to small sample size.</span></span></span></p>
+<p>               </p>
+<table>
+<thead>
+<tr>
+<th>BB/9</th>
+<th>2019</th>
+<th>2018</th>
+<th>2017</th>
+<th>2016</th>
+<th>2015</th>
+<th>2014</th>
+<th>2013</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1.5 max</td>
+<td>1.07</td>
+<td>1.12</td>
+<td>1.12</td>
+<td>1.01</td>
+<td>1.12</td>
+<td>1.10</td>
+<td>1.14</td>
+</tr>
+<tr>
+<td>1.5-2</td>
+<td>1.11</td>
+<td>1.14</td>
+<td>1.17</td>
+<td>1.21</td>
+<td>1.11</td>
+<td>1.17</td>
+<td>1.17</td>
+</tr>
+<tr>
+<td>2-2.5</td>
+<td>1.24</td>
+<td>1.18</td>
+<td>1.27</td>
+<td>1.23</td>
+<td>1.22</td>
+<td>1.23</td>
+<td>1.24</td>
+</tr>
+<tr>
+<td>2.5-3</td>
+<td>1.31</td>
+<td>1.27</td>
+<td>1.30</td>
+<td>1.30</td>
+<td>1.33</td>
+<td>1.31</td>
+<td>1.28</td>
+</tr>
+<tr>
+<td>3-3.5</td>
+<td>1.37</td>
+<td>1.30</td>
+<td>1.37</td>
+<td>1.35</td>
+<td>1.40</td>
+<td>1.32</td>
+<td>1.41</td>
+</tr>
+<tr>
+<td>3.5-4</td>
+<td>1.44</td>
+<td>1.37</td>
+<td>1.43</td>
+<td>1.48</td>
+<td>1.39</td>
+<td>1.40</td>
+<td>1.45</td>
+</tr>
+<tr>
+<td>4+</td>
+<td>1.50</td>
+<td>1.48</td>
+<td>1.56</td>
+<td>1.57</td>
+<td>1.49</td>
+<td>1.52</td>
+<td>1.47</td>
+</tr>
+<tr>
+<td>Avg</td>
+<td>1.29</td>
+<td>1.27</td>
+<td>1.37</td>
+<td>1.34</td>
+<td>1.30</td>
+<td>1.28</td>
+<td>1.32</td>
+</tr>
+</tbody>
+</table>
+<p> </p>
+<p><span><span><span>Based on the yearly WHIP average at the bottom of the table, it’s clear that finding pitchers capable of producing sub-2.5 BB/9 is key when uncovering potential value for the category. With that fact in mind, here’s a rundown of eight names to track in 2021 for fantasy leagues of varying sizes.</span></span></span></p>
+<p> </p>
+<h2><span><span><span><u>Mixed League Sleepers</u></span></span></span></h2>
+<p><span><span><span><a href="../../baseball/mlb/player/21344/aaron-civale.html" hreflang="und" target="_blank">Aaron Civale</a>, SP, Indians</span></span></span></p>
+<p><span><span><span>Civale had a strong rookie season in 2019 for Cleveland, posting a terrific 2.34 ERA and 1.04 WHIP in 10 starts. Unfortunately, his second time around the league wasn’t as smooth in 2020, allowing a league-high 82 hits and seeing his ERA jump to 4.74 in 12 starts. The regression shouldn’t come as a huge surprise for a pitcher who has below average fastball velocity and was never seen as a top prospect. Still, we saw some encouraging signs in a follow-up performance that make him a worthy fantasy addition in 2021.</span></span></span></p>
+<p><span><span><span>Civale’s biggest statistical asset is his control, and it only got better in 2020. He posted an elite 1.9 BB/9 and 4.31 K/BB ratio, but obviously Civale wasn’t as much of a WHIP asset (1.32) with the high hit rate. His unlucky .333 BABIP should provide some solace that Civale will improve, and his minor league track record shows the elite control is far from a fluke, with a 1.4 BB/9 for his career. With any soft thrower there are obvious questions about being too hittable at the highest level, but Civale’s 7.9 K/9 through 22 career starts is more than adequate to regain his status as a solid WHIP pitcher. His ADP is currently about 188 in NFBC leagues, which seems viable given the high floor with his control.</span></span></span></p>
+<p><span><span><span><a href="../../baseball/mlb/player/61449/josh-fleming.html" hreflang="und" target="_blank">Josh Fleming</a>, SP, Rays</span></span></span></p>
+<p><span><span><span>With several injuries to their starting rotation in 2020, the Rays turned to some lesser-known pitchers. Fleming was one of the starters, going 5-0 over seven regular season appearances with a 2.78 ERA and 1.08 WHIP in 32.1 innings. The lefty is another astute find by the Rays, as a fifth-round pick out of small Webster University in St. Louis back in 2017. He’s seen a quick and direct climb up the minors with a nasty sinker and excellent control, posting a 64% groundball rate with the Rays last year, along with a brilliant 1.9 BB/9. Fleming also showed great control in the minors with a 1.6 BB/9 in six seasons.</span></span></span></p>
+<p><span><span><span>We shouldn’t kid ourselves with Fleming, as the fantasy upside is very limited.  He never posted a 7.0 K/9 in the minors and has well above average velocity with a fastball that averaged just less than 91 mph last season. Still, the control-groundball combo can certainly work in the majors, as it does for pitchers like Randy Dobnak and <a href="../../baseball/mlb/player/18893/brett-anderson.html" hreflang="und" target="_blank">Brett Anderson</a>, and Fleming could have an opportunity to win a rotation spot now that the Rays have traded <a href="../../baseball/mlb/player/20623/blake-snell.html" hreflang="und" target="_blank">Blake Snell</a> and lost <a href="../../baseball/mlb/player/18753/charlie-morton.html" hreflang="und" target="_blank">Charlie Morton</a> in free agency. Fleming is basically free in mixed leagues at this point, with a current ADP of 533, but has a chance to be a nice fit as a reserve in deeper mixed leagues.</span></span></span></p>
+<p><span><span><span><a href="../../baseball/mlb/player/21135/jordan-montgomery.html" hreflang="und" target="_blank">Jordan Montgomery</a>, SP, Yankees</span></span></span></p>
+<p><span><span><span>The Yankees pitching staff got a lot of attention in the shortened season with <a href="../../baseball/mlb/player/19600/gerrit-cole.html" hreflang="und" target="_blank">Gerrit Cole</a>’s continued dominance, <a href="../../baseball/mlb/player/20118/masahiro-tanaka.html" hreflang="und" target="_blank">Masahiro Tanaka</a>’s strong year, and an influx of young talent. Returning from Tommy John surgery, Montgomery was one of the weak links in the rotation with a final ERA of 5.11 in 10 starts due to some inopportune long balls, but he did make a solid four-inning start against the Rays in the ALDS. Montgomery also did other things well, showing elite command and control with a 5.22 K/BB and 1.8 BB/9 over 44 regular season innings. The control was far better than what he showed earlier in his MLB career, but isn’t out of step with his minor league performance. The lefty had a solid 2.6 BB/9 in five minor league seasons, showing his control to be one of his biggest strengths.</span></span></span></p>
+<p><span><span><span>There is even more good news from Montgomery’s shortened 2020 season after looking closer at the numbers. He showed career-best fastball velocity, with his sinker up about one mph, and most of his ERA metrics (FIP, xFIP, SIERA) show a sub-4.00 ERA. We shouldn’t take lightly the impact that Yankee Stadium can have on a pitcher’s ERA, but last year’s trends over a small sample size show near ace potential. With the bonus of likely wins on a good team, Montgomery would seem like a bargain with an ADP of 232.</span></span></span></p>
+<p><span><span><span><a href="../../baseball/mlb/player/14636/jose-urquidy.html" hreflang="und" target="_blank">Jose Urquidy</a>, SP, Astros</span></span></span></p>
+<p><span><span><span>You’ll have to excuse me for mentioning Urquidy in this space for the second consecutive year. His 2020 season was almost ruined due to COVID-19, as the right-hander didn’t appear in a game until September, but he did salvage his season with five regular season starts and four more appearances in the playoffs. Just as he did late in 2019, Urquidy impressed with his nasty changeup, along with a fastball that played well at 93 mph. As we saw in the minors, Urquidy also showed off outstanding control with a 2.4 BB/99 in 29.2 innings after posting a 1.5 BB/9 over 41 innings in 2019. His minor league history reflects a similar story with a career 1.8 BB/9, helping him post a 3.37 ERA and 1.15 WHIP in 323.1 innings.</span></span></span></p>
+<p><span><span><span>The long ball remains a concern for Urquidy that could inflate his ERA. He’s had extreme flyball rates above 40% in consecutive seasons, which nearly match what he’s done in the minors. However, control this great is tough to come by, and Urquidy is all but guaranteed a rotation spot heading into 2021 after the success he’s shown in MLB thus far. The control shows a major WHIP asset for fantasy managers for a very reasonable price with an early ADP of 213.</span></span></span></p>
+<p> </p>
+<h2><span><span><span><u>Single League Sleepers</u></span></span></span></h2>
+<p><span><span><span>Jaime Barria, SP, Angels</span></span></span></p>
+<p><span><span><span>Barria’s development in the majors has been somewhat frustrating to this point. He was a relevant player in his 2018 rookie season, going 10-9 with a 3.41 ERA and 1.27 WHIP in 26 starts. Since then, he has struggled to maintain a roster spot in the majors. He was one of the league’s worst pitchers in 2019, with a 6.42 ERA and 1.44 WHIP over 82.2 innings, but last season showed better results in limited duty with a 3.62 ERA and 1.11 WHIP over 32.1 innings, including five starts. Still, the right-hander hasn’t done anything to draw major attention, and was shuttled up and down between the majors and alternate camp in 2020.</span></span></span></p>
+<p><span><span><span>With three years of MLB experience, it’s easy to forget that Barria is still only 24. It’s also easy to overlook what was a quality prospect not too long ago, with a terrific career 1.7 BB/9 in the minors and very good track record until his struggles at Triple-A in 2019. His control also showed improvement last season, albeit in a very small sample of innings with a 2.5 BB/9, and he’s continued to pitch effectively this offseason in the Dominican Winter League. His mediocre strikeout rates limit the upside (7.4 K/9 for his career in the minors and majors), but he still has a chance to be a solid back of the rotation starter and WHIP asset on a team desperate for starting pitching depth.</span></span></span></p>
+<p><span><span><span><a href="../../baseball/mlb/player/62564/alec-bettinger.html" hreflang="und" target="_blank">Alec Bettinger</a>, SP, Brewers</span></span></span></p>
+<p><span><span><span>With most teams intent on cost cutting this offseason, upper minors depth is more important than ever. If the Brewers are looking for their next man up in the rotation, Bettinger is a strong candidate. The right-hander had a breakout season at Double-A Biloxi in 2019 with a 3.44 ERA and 1.07 WHIP in 26 starts over 146.1 innings. The former 10<sup>th</sup>-round pick’s control has improved considerably since he pitched at Virginia, with a 2.2 BB/9, along with a 9.7 K/9, in 2019. </span></span></span></p>
+<p><span><span><span>Recently, the Brewers added Bettinger to their 40-man roster, an indication that his time could be coming in short order. He showed a velocity increase during his breakout season, and it remains to be seen where there stands now one year removed after the lost COVID-19 season. However, being on the 40-man roster is a great sign that Bettinger will be a big contributor in 2021, with the hope that his velocity and new found control of the strike zone holds with the jump. He looks like a late-around flier for NL-only leagues.</span></span></span></p>
+<p><span><span><span><a href="../../baseball/mlb/player/50544/daulton-jefferies.html" hreflang="und" target="_blank">Daulton Jefferies</a>, SP, Athletics</span></span></span></p>
+<p><span><span><span>Jefferies made his MLB debut last season, and it wasn’t pretty. He allowed five earned runs in only two innings in what was his only professional appearance of the year. Even great pitchers have struggled in their MLB debuts, so it’s nothing to get too discouraged about yet. In fact, there is so much to like here that the poor initial outing could work to the advantage of fantasy managers looking to acquire Jefferies cheaply.</span></span></span></p>
+<p><span><span><span>The former first-round pick out of Cal has had his share of injuries during his pro career, but he’s been a master of control when healthy. His breakout 2019 season between High-A and Double-A included an incredible 93/9 K/BB in 79 innings, good for a sweet 10.6 K/9 and 1.0 BB/9. This is hardly a smoke-and-mirrors situation, either, as Jefferies averaged 95 mph on his fastball during his MLB debut. One would expect his transition to go smoother as he gains experience given the pinpoint control, but first Jefferies has to stay healthy.</span></span></span></p>
+<p><span><span><span>Sean Hjelle, SP, Giants</span></span></span></p>
+<p><span><span><span>Hjelle’s stands at 6-foot-11 with excellent control, a profile that screams <a href="../../baseball/mlb/player/18222/chris-young.html" hreflang="und" target="_blank">Chris Young</a>. The former second-round pick out of Kentucky had a terrific 2019 season between three levels with a 3.32 ERA and 1.32 WHIP in 28 starts, posting an 8.7 K/9 and 2.3 BB/9 for the season. Hjelle not only throws consistent strikes but has also produced impressive groundball rates in the minors, with a groundball-to-flyball ratio of well over 2.00 in 2019.</span></span></span></p>
+<p><span><span><span>Lacking top-shelf stuff, Hjelle is a lesser known prospect, but one that projects to have a high floor with his skillset. The excellent control has been one of his calling cards going back to college, and the Giants might be able to give Hjelle an opportunity soon with a young back-end of their starting rotation as things sit now. We can’t rule out an eventual mixed league contribution, but for now Hjelle looks like a nice flier as he will soon make his MLB transition.</span></span></span></p>
+</div>
+          </div>
+  <strong class="node_view"></strong>
+    </section>
+
+    <footer class="article-full__footer">
+      <div class="article-full__author-image">
+        
+            <div class="article__article-author">
+  <article class="image__media-image">
+  
+      
+    <img src="../../sites/default/files/authors/171.jpg" width="80" height="80" alt="Seth Trachtman" />
+
+
+
+  </article>
+
+
+</div>
+      
+      </div>
+      <div class="article-full__author-info">
+                  <div class="article-full__author-name">
+            Seth Trachtman
+          </div>
+              </div>
+
+      <div class="article-full__share">
+        <span class="a2a_kit a2a_kit_size_32 addtoany_list" data-a2a-url="https://www.rotoworld.com/article/draft-strategy/5x5-sleepers-whip" data-a2a-title="5x5 Sleepers: WHIP"><a class="a2a_button_facebook"></a><a class="a2a_button_twitter"></a><a class="a2a_button_reddit"></a><a class="a2a_button_email"></a></span>
+
+        
+<span class="a2a_kit_size_32 addtoany_list addtoany_list--last">
+  <a class="a2a_button_print" target="_blank" href="../../node/211346/printable/print.html" rel="nofollow">
+    <span class="a2a_svg a2a_s__default a2a_s_print" style="background-color: rgb(1, 102, 255);">
+      <svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M22.5 19.59V24h-13v-4.41z" fill="#fff" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.4"></path><path d="M9.44 21.12H6.38a.8.8 0 0 1-.87-.7v-7.35a.8.8 0 0 1 .88-.7h19.23a.8.8 0 0 1 .88.7v7.35a.8.8 0 0 1-.88.7h-3.06" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.4"></path><path d="M22.5 12.32V8h-13v4.28" fill="#fff" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.4"></path></svg>
+    </span>
+    <span class="a2a_label">Print</span>
+  </a>
+</span>
+      </div>
+
+              <div class="article-full__author-bio">
+          You can find Seth Trachtman on Twitter <a href="http://www.twitter.com/@sethroto">@sethroto</a>.
+        </div>
+          </footer>
+
+      </div>
+</article>
+
+    </div>
+  </div>
+
+
+<div id="block-taboola" class="block block-rw block-taboola">
+  
+    
+      <div class="block__content">
+      <div class="taboola"></div>
+
+    </div>
+  </div>
+
+
+<div id="block-change-masterhead-logo-href" class="block--html block--block_content--html block block-block-content block-change-masterhead-logo-href">
+  
+    
+      <div class="block__content">
+      
+            <div class="html__block-html-body"><script>
+(function () {
+    window.addEventListener('DOMContentLoaded', (event) => {
+        try {
+            if (document.querySelector('.premium-logo.header__logo')) {
+                document.querySelector('.premium-logo.header__logo').parentElement.setAttribute('href', '//products.rotoworld.com');
+            }
+        } catch (e) {
+
+        }
+    });
+})();
+
+</script></div>
+      
+    </div>
+  </div>
+
+
+      </div>
+      
+    </div><!-- /container -->
+  </div>
+
+        <footer id="footer">
+              <div class="footer__logo container">
+          <a href="../../index.html" title="Home" rel="home">
+            <img src="../../themes/custom/rotoworld_theme/images/logos/logo-rw-footer.svg" alt="Home"/>
+          </a>
+        </div>
+            <div class="footer__content container">
+                  <div class="footer__column">
+              <div>
+    
+
+<div id="block-footersitelinks" class="block--html block--block_content--html block block-block-content block-footersitelinks">
+  
+      <h2 class="block__title">Site Links</h2>
+    
+      <div class="block__content">
+      
+            <div class="html__block-html-body"><ul>
+	<li><a href="https://together.nbcuni.com/" target="_blank">Advertising</a></li>
+	<li><a href="https://www.nbcuniversal.com/privacy/cookies" target="_blank">Ad Choices</a></li>
+	<li><a href="http://www.nbcunicareers.com/" target="_blank">Careers</a></li>
+	<li><a href="../../contact-us.html">Contact Us</a></li>    
+	<li><a href="../../Frequently-Asked-Questions.html">FAQs</a></li>    
+	<li><a href="https://www.nbcuniversal.com/privacy?intake=NBCSportsGroupOlympics" target="_blank">Privacy Policy</a></li>
+	<li><a href="https://www.nbcuniversal.com/privacy/notrtoo?intake=NBCSportsGroupOlympics" target="_blank">Do Not Sell My Personal Information</a></li>
+	<li><a href="https://www.nbcuniversal.com/privacy/california-consumer-privacy-act?intake=NBCSportsGroupOlympics" target="_blank">CA Notice</a></li>
+	<li><a href="http://www.nbcsports.com/terms-use" target="_blank">Terms of Service</a></li>
+    	<li><a href="http://www.stubhub.com/?ref=nbcsports_rw" target="_blank">Tickets</a></li>
+	<li><a href="http://www.workinsports.com/nbc-sports-jobs/?ref=1525" target="_blank">Sports Jobs</a></li>
+</ul></div>
+      
+    </div>
+  </div>
+
+  </div>
+
+          </div>
+                          <div class="footer__column">
+              <div>
+    
+
+<div id="block-footerfacebooklinks" class="block--html block--block_content--html block block-block-content block-footerfacebooklinks">
+  
+      <h2 class="block__title">Facebook</h2>
+    
+      <div class="block__content">
+      
+            <div class="html__block-html-body"><ul>
+<li><a href="https://www.facebook.com/rotoworld/" target="_blank"><strong>Rotoworld:</strong> @Rotoworld </a></li>
+</ul>
+</div>
+      
+    </div>
+  </div>
+
+
+<div id="block-footertwitterlinks" class="block--html block--block_content--html block block-block-content block-footertwitterlinks">
+  
+      <h2 class="block__title">Twitter</h2>
+    
+      <div class="block__content">
+      
+            <div class="html__block-html-body"><ul>
+<li><a href="http://twitter.com/rotoworld" target="_blank"><strong>Rotoworld:</strong> @Rotoworld</a></li>
+<li><a href="http://twitter.com/rotoworld_fb" target="_blank"><strong>Football:</strong> @Rotoworld_FB</a></li>
+<li><a href="http://twitter.com/rotoworld_bk" target="_blank"><strong>Basketball:</strong> @Rotoworld_BK</a></li>
+<li><a href="http://twitter.com/rotoworld_bb" target="_blank"><strong>Baseball:</strong> @Rotoworld_BB</a></li>
+<li><a href="http://twitter.com/rotoworld_hk" target="_blank"><strong>Hockey:</strong> @Rotoworld_HK</a></li>
+<li><a href="http://twitter.com/rotoworld_daily" target="_blank"><strong>Daily:</strong> @Rotoworld_Daily</a></li>
+<li><a href="http://www.twitter.com/rotoworld_draft" target="_blank"><strong>NFL Draft:</strong> @Rotoworld_Draft</a></li>
+<li><a href="http://twitter.com/rotoworld_pl" target="_blank"><strong>Premier League:</strong> @Rotoworld_PL</a></li>
+<li><a href="http://twitter.com/rotoworldgolf" target="_blank"><strong>Golf:</strong> @RotoworldGolf</a></li>
+<li><a href="http://twitter.com/rotoworld_auto" target="_blank"><strong>Auto:</strong> @Rotoworld_Auto</a></li>
+</ul>
+</div>
+      
+    </div>
+  </div>
+
+  </div>
+
+          </div>
+                          <div class="footer__column">
+              <div>
+    
+
+<div id="block-footerrotoworldpremium" class="block--html block--block_content--html block block-block-content block-footerrotoworldpremium">
+  
+      <h2 class="block__title">Rotoworld Premium</h2>
+    
+      <div class="block__content">
+      
+            <div class="html__block-html-body"><ul>
+
+	<li><a href="https://products.rotoworld.com/mlb/draft-guide" target="_blank">Baseball Draft Guide</a></li>
+    
+	<li><a href="https://products.rotoworld.com/mlb/seasonpass" target="_blank">Baseball Season Tools</a></li>
+    
+	<li><a href="https://dfs.rotoworld.com/mlb/optimizer" target="_blank">Baseball DFS Tools</a></li>
+
+	<li><a href="https://bet.rotoworld.com/mlb/edge_finder" target="_blank">Baseball Betting Tools</a></li>
+
+
+
+	<li><a href="https://products.rotoworld.com/nba/draft-guide" target="_blank">Basketball Draft Guide</a></li>
+    
+    	<li><a href="https://products.rotoworld.com/nba/season-pass" target="_blank">Basketball Season Tools</a></li>
+    
+	<li><a href="https://dfs.rotoworld.com/nba/optimizer" target="_blank">Basketball DFS Tools</a></li>
+    
+	<li><a href="https://bet.rotoworld.com/nba/edge_finder" target="_blank">Basketball Betting Tools</a></li>    
+    
+    
+
+	<li><a href="https://products.rotoworld.com/nfl/draft-guide" target="_blank">Football Draft Guide</a></li>
+    
+	<li><a href="https://products.rotoworld.com/nfl/season-pass" target="_blank">Football Season Tools</a></li>
+    
+	<li><a href="https://dfs.rotoworld.com/nfl/optimizer" target="_blank">Football DFS Tools</a></li>
+    
+	<li><a href="https://bet.rotoworld.com/nfl/edge_finder" target="_blank">Football Betting Tools</a></li>      
+
+    
+    
+	<li><a href="https://products.rotoworld.com/nhl/draft-guide" target="_blank">Hockey Draft Guide</a></li>
+    
+	<li><a href="https://products.rotoworld.com/nhl/season-pass" target="_blank">Hockey Season Tools</a></li>
+    
+	<li><a href="https://dfs.rotoworld.com/nhl/optimizer" target="_blank">Hockey DFS Tools</a></li>
+        
+	<li><a href="https://bet.rotoworld.com/nhl/edge_finder" target="_blank">Hockey Betting Tools</a></li>  
+    
+</ul></div>
+      
+    </div>
+  </div>
+
+  </div>
+
+          </div>
+                          <div class="footer__column">
+            <div class="footer__column__newsletter">
+                <div>
+    
+
+<div id="block-footergetnewslettersalerts" class="block--html block--block_content--html block block-block-content block-footergetnewslettersalerts">
+  
+      <h2 class="block__title">Get Newsletters &amp; Alerts</h2>
+    
+      <div class="block__content">
+      
+            <div class="html__block-html-body"><p><a href="../../newsletter.html" target="_blank">SIGN UP</a></p>
+</div>
+      
+    </div>
+  </div>
+
+
+<div id="block-gamblingdisclaimerfootertext" class="block--html block--block_content--html block block-block-content block-gamblingdisclaimerfootertext">
+  
+    
+      <div class="block__content">
+      
+            <div class="html__block-html-body"><style type="text/css">.footer__content.container {
+    position: relative;
+    padding-bottom: 75px;
+}
+
+#block-gamblingdisclaimerfootertext{
+    position: absolute;
+    bottom: -40px;
+    width: 100%;
+    left: 0;
+}
+
+.footer-disclaimer {
+   font-weight: normal;
+    font-family: proxima-nova,sans-serif;
+    font-size: 12px;
+    padding: 8px;
+}
+
+@media (max-width: 500px) {
+    .footer__content.container {
+          padding-bottom: 125px;
+    }
+}
+</style><p class="footer-disclaimer">DISCLAIMER: This site and the products offered are for entertainment purposes only, and there is no gambling offered on this site. This service is intended for adult audiences. No guarantees are made for any specific outcome. If you or someone you know has a gambling problem, please call 1-800-GAMBLER.</p>
+</div>
+      
+    </div>
+  </div>
+
+
+<div id="block-hide-cbb-player-news-tab" class="block--html block--block_content--html block block-block-content block-hide-cbb-player-news-tab">
+  
+    
+      <div class="block__content">
+      
+            <div class="html__block-html-body"><script>
+try {
+    (function () {
+        var limit = 10;
+        var attempt = 0;
+        function removeTab(aTags) {
+            Array.prototype.forEach.call(aTags, function (aTag) {
+                if (aTag.innerText && aTag.innerText.toLowerCase() === 'cbb') {
+                    aTag.style.display = 'none';
+                }
+            });
+        }
+        var checkForPlayerNews = setInterval(function () {
+            var aTags = document.querySelectorAll('.player-news-wrapper .player-news a.tab-menu__tab')
+            if (aTags.length > 0) {
+                removeTab(aTags);
+                clearInterval(checkForPlayerNews);
+            }
+            if (attempt >= limit) {
+                clearInterval(checkForPlayerNews);
+            }
+            attempt++;
+        }, 500);
+
+    })()
+
+} catch (e) {
+
+}
+</script></div>
+      
+    </div>
+  </div>
+
+  </div>
+
+            </div>
+            <div class="footer__column__logo"></div>
+            <div class="footer__column__copyright">
+              &copy;2021 NBC Sports Digital<br>All Rights Reserved
+            </div>
+          </div>
+              </div>
+    </footer>
+    
+  </div>
+
+    <!-- AdobeAnalytics code version: 1.7.0
+Copyright 1996-2017 Adobe, Inc. -->
+<script type="text/javascript" src="../../modules/features/rw_analytics/js/Rotoworld_AppMeasurement_VisitorAPI.js"></script>
+
+<script type="text/javascript"><!--
+
+    s.account="nbcusportsgroupglobal,nbcurotoworldbu";
+s.pageName="/article/draft-strategy/5x5-sleepers-whip";
+s.contextData['nbcs.contenthub']="News";
+s.contextData['nbcs.contenttype']="Story";
+s.contextData['nbcs.contentid']="211346";
+s.contextData['nbcs.contenttitle']="5x5 Sleepers: WHIP";
+s.contextData['nbcs.author']="seth trachtman";
+s.contextData['nbcs.subfeature']="draft strategy";
+s.contextData['nbcs.league']="mlb";
+s.contextData['nbcs.sport']="baseball";
+
+    /************* DO NOT ALTER ANYTHING BELOW THIS LINE ! **************/
+    var s_code=s.t();if(s_code)document.write(s_code) //--></script>
+<script type="text/javascript"><!--
+    if(navigator.appVersion.indexOf('MSIE')>=0)document.write(unescape('%3C')+'\!-'+'-')
+    //--></script>
+<!--/DO NOT REMOVE/-->
+<!-- End AdobeAnalytics code version: 1.7.0 -->
+
+    <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","scriptPath":null,"pathPrefix":"","currentPath":"node\/211346","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"en"},"pluralDelimiter":"\u0003","suppressDeprecationErrors":true,"rwLeague":{"defaultLeague":{"id":"21","uuid":"16c9bfef-32a5-49c8-97ba-be0ccf872d5c","type":"league","bundle":"league","label":"NFL","path":"\/admin\/content\/league\/21","data":{"season":"2020","inSeason":true,"abbreviation":"NFL","playerNewsFilters":["headlines","injuries","transactions","team","position","position_group"],"standingsTabs":["american","national","playoffs"],"seasonStartsOn":"2020-07-21","seasonEndsOn":"2021-02-07","lp":{"id":"134316","uuid":"21c75713-1d7e-4c25-99e7-36d397cbbd16","type":"node","bundle":"lp","label":"NFL Home","path":"\/sports\/nfl\/football","data":{"category":null,"sport":true,"videoHubUrl":"\/videos\/football\/nfl"}},"videoHubUrl":false}}},"rwSearch":{"endpoint":"https:\/\/search.rotoworld.com\/players","apiKey":"vWahHcUV5n6xPc9GAnzpX55O0ny1CR5Z2vOFoht0"},"rwEntity":[{"id":"211346","uuid":"0411e9f9-0c2f-4870-be91-164017f7ca82","type":"node","bundle":"article","label":"5x5 Sleepers: WHIP","path":"\/article\/draft-strategy\/5x5-sleepers-whip","data":{"author":{"id":"386","uuid":"44876b14-d2f3-4b96-ab2d-b0a9055df697","type":"node","bundle":"author","label":"Seth Trachtman","path":"\/node\/386","data":{"videoHubUrl":false}},"videoHubUrl":"\/videos\/baseball\/mlb"}},{"id":"666","uuid":"1b26f987-08d1-4241-be0f-1b1057b1698e","type":"column","bundle":"column","label":"Draft Strategy","path":"\/admin\/content\/column\/666","data":{"videoHubUrl":false}},{"id":"1","uuid":"ab0bc6cb-4d63-450b-af13-87e6db1cc84f","type":"league","bundle":"league","label":"MLB","path":"\/admin\/content\/league\/1","data":{"season":"2020","inSeason":false,"abbreviation":"MLB","playerNewsFilters":["headlines","injuries","transactions","team","conference","position","position_group"],"standingsTabs":["american","national"],"seasonStartsOn":"2020-03-26","seasonEndsOn":"2020-10-30","lp":{"id":"134321","uuid":"56e2e9fc-cc7a-41ef-b30e-ee145b90ced9","type":"node","bundle":"lp","label":"MLB Home","path":"\/sports\/mlb\/baseball","data":{"category":null,"sport":true,"videoHubUrl":"\/videos\/baseball\/mlb"}},"videoHubUrl":false}},{"id":"1","uuid":"e007c74a-6d94-4260-b24c-e283ee230dd0","type":"sport","bundle":"sport","label":"Baseball","path":"\/admin\/content\/sport\/1","data":{"videoHubUrl":false}}],"rw":{"middleTier":{"url":"https:\/\/api.rotoworld.com\/","apiKey":"y0fAF1r59s4JQ7kDjxGqx2lGrcM1zxl75JaKI13v"}},"userAdministerMenu":false,"rwScoreboard":{"scoreboard_url":"\/\/bet.rotoworld.com\/home_page\/component\/scoreboard\/","sports":["NFL","NBA","MLB","NHL","EPL","GOLF","NASCAR","CFB","CBK","F1","MLS","CYCLING"],"sports_to_league_mapping":{"NFL":"NFL","EPL":"PL","CFB":"NFL Draft"},"default_sport":"NFL"},"user":{"uid":0,"permissionsHash":"55fcf4838d13c04ac44e9952e11855d711b8b3dc651e74bce84a383283b719f2"}}</script>
+<script src="../../core/assets/vendor/jquery/jquery.min05db.js?v=3.4.1"></script>
+<script src="../../core/assets/vendor/jquery/jquery-htmlprefilter-3.5.005db.js?v=3.4.1"></script>
+<script src="../../core/assets/vendor/jquery-once/jquery.once.mind1f1.js?v=2.2.0"></script>
+<script src="../../core/misc/drupalSettingsLoader971a.js?v=8.8.10"></script>
+<script src="../../core/misc/drupal971a.js?v=8.8.10"></script>
+<script src="../../core/misc/drupal.init971a.js?v=8.8.10"></script>
+<script src="../../core/assets/vendor/picturefill/picturefill.min3294.js?v=3.0.1"></script>
+<script src="../../modules/features/rw/js/vue.min971a.js?v=8.8.10"></script>
+<script src="../../modules/features/rw/js/vuex.min971a.js?v=8.8.10"></script>
+<script src="../../modules/features/rw/js/vue-resource.min971a.js?v=8.8.10"></script>
+<script src="../../modules/features/rw/js/vue-router.min971a.js?v=8.8.10"></script>
+<script src="../../modules/features/rw/js/vue-outside-events.min971a.js?v=8.8.10"></script>
+<script src="../../modules/features/rw/js/polyfill.min971a.js?v=8.8.10"></script>
+<script src="../../modules/features/rw_analytics/js/analytics-track-dynamic-content971a.js?v=8.8.10"></script>
+<script src="../../../static.addtoany.com/menu/page.js" async></script>
+<script src="../../modules/contrib/addtoany/js/addtoany971a.js?v=8.8.10"></script>
+<script src="../../themes/custom/rotoworld_theme/js/libraries/modernizr971a.js?v=8.8.10"></script>
+<script src="../../themes/custom/rotoworld_theme/js/mobile-nav971a.js?v=8.8.10"></script>
+<script src="../../themes/custom/rotoworld_theme/js/nav-shadowing971a.js?v=8.8.10"></script>
+<script src="../../themes/custom/rotoworld_theme/js/enquire.min971a.js?v=8.8.10"></script>
+<script src="../../modules/features/rw/js/general971a.js?v=8.8.10"></script>
+<script src="../../modules/features/rw/js/premium-sub-nav/dist/build971a.js?v=8.8.10"></script>
+<script src="../../modules/features/rw/js/premium-subnavigation971a.js?v=8.8.10"></script>
+<script src="../../../cdn.taboola.com/libtrc/nbcsports-rotoworld/loader.js"></script>
+<script src="../../modules/features/rw/js/taboola_block971a.js?v=8.8.10"></script>
+<script src="../../core/assets/vendor/matchMedia/matchMedia.minee2f.js?v=0.2.0"></script>
+<script src="../../themes/custom/rotoworld_theme/js/tableizer971a.js?v=8.8.10"></script>
+<script src="../../../cdn.jsdelivr.net/gh/kenwheeler/slick%401.8.1/slick/slick.min.js"></script>
+<script src="../../themes/custom/rotoworld_theme/js/slider971a.js?v=8.8.10"></script>
+<script src="../../modules/features/rw_media/js/related-svods/dist/latest-svods971a.js?v=8.8.10"></script>
+<script src="../../modules/features/rw_player/js/trending/dist/build971a.js?v=8.8.10"></script>
+<script src="../../modules/features/rw_column/js/archive/dist/latest-by-column971a.js?v=8.8.10"></script>
+<script src="../../modules/features/rw_column/js/archive/dist/latest-by-author971a.js?v=8.8.10"></script>
+<script src="../../core/misc/debounce971a.js?v=8.8.10"></script>
+<script src="../../modules/features/rw_mps/js/mps-responsive7fb6.js?qmug0p"></script>
+<script src="../../modules/features/rw_player_news/js/headline/dist/build971a.js?v=8.8.10"></script>
+<script src="../../modules/features/rw/js/user/dist/user-menu-block971a.js?v=8.8.10"></script>
+<script src="../../modules/custom/rw_search/js/search/dist/build971a.js?v=8.8.10"></script>
+<script src="../../modules/features/rw_league/js/scoreboard.iframe7fb6.js?qmug0p"></script>
+<script src="../../modules/features/rw_mps/js/mps-lav7fb6.js?qmug0p"></script>
+<script src="../../modules/features/rw_media/js/tpPdkController971a.js?v=8.8.10"></script>
+<script src="../../modules/features/rw_media/js/video-docking971a.js?v=8.8.10"></script>
+
+
+    
+  <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam-cell.nr-data.net","licenseKey":"97ac2b2f11","applicationID":"115229629","transactionName":"MgEEMRRUVxJTUBULVwtLJwYSXFYPHUMABV06BwcGDlA=","queueTime":0,"applicationTime":33,"atts":"HkYHR1xORBw=","errorBeacon":"bam-cell.nr-data.net","agent":""}</script></body>
+
+<!-- Mirrored from www.rotoworld.com/article/draft-strategy/5x5-sleepers-whip?amp by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 16 Jan 2021 08:38:19 GMT -->
+</html>
