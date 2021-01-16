@@ -15,11 +15,12 @@ import re
 
 def main():
 
+    # inserire il dataset specificando la cartella su cui si vuole eseguire il programma
     rootdir = 'dataset/study'
     # lf.lista_pagine_web(rootdir)
     mv_list = clusterizz_pagine(rootdir)
     mv_list = valutazione(mv_list)
-    fileSaver.save_to_file(mv_list, 'valutazione-minhash.txt')
+    # fileSaver.save_to_file(mv_list, 'valutazione-minhash.txt')
 
 def valutazione(mv_list):
     list_cluster = []
